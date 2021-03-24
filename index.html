@@ -101,7 +101,10 @@
                         <div><i class="fas fa-info-circle text-white"></i></div>
                         <p class="m-0 px-4 text-white">I will reply within 24hours.</p>
                     </div>
-                    <form action="nao.form.en.php" method="POST" class="container my-5">
+                    
+                    
+                    <form action="https://formspree.io/f/xknkwblz" method="POST" class="container my-5">
+                        <input type="hidden" name="_subject" value="Contact request from suzuran.me" />
                         <div class="form-group">
                             <label for="companyName">Company:</label>
                             <input type="text" class="form-control" name="companyName" placeholder="Enter your company name">
@@ -112,16 +115,17 @@
                         </div>
                         <div class="form-group">
                             <label for="email">Email address:</label>
-                            <input type="email" class="form-control" name="email" placeholder="Your email address" required>
+                            <input type="email" class="form-control" name="_replyto" placeholder="Your email address" required>
                         </div>
                         <div class="form-group">
                             <label for="comment">Comment:</label>
-                            <textarea class="form-control" rows="6" name="comment" placeholder="Type your message here..." required></textarea>
+                            <textarea class="form-control" rows="6" name="message" placeholder="Type your message here..." required></textarea>
                         </div>
                         <div class="text-center">
                             <button type="submit" name="submit" class="btn btn-dark">Submit</button>
                         </div>
                     </form>
+                    
                 </div>
             </div>
         </div>
