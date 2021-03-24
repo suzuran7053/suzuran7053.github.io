@@ -35,18 +35,18 @@
         <div class="header_md">
             <nav class="navbar navbar-expand-md justify-content-center bg-dark fixed-top" style="width: 100%;">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item mx-5"><a class="nav-link none" href="">HOME</a></li>
-                    <li class="nav-item mx-5"><a class="nav-link none" href="#aboutMe">ABOUT ME</a></li>
-                    <li class="nav-item mx-5"><a class="nav-link none" href="#portfolio">PORTFOLIO</a></li>
+                    <li class="nav-item mx-5"><a class="nav-link none" href="">ホーム</a></li>
+                    <li class="nav-item mx-5"><a class="nav-link none" href="#aboutMe">自己紹介</a></li>
+                    <li class="nav-item mx-5"><a class="nav-link none" href="#portfolio">作品集</a></li>
                     <li class="nav-item mx-5">
-                        <div class="nav-link cursor" data-toggle="modal" data-target="#modalContact">CONTACT</div>
+                        <div class="nav-link cursor" data-toggle="modal" data-target="#modalContact">お問い合わせ</div>
                     </li>
                 </ul>
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <div class="dropdown nav-link">
                             <div class="dropdown-toggle cursor" data-toggle="dropdown">
-                                <span><i class="fas fa-globe-asia"></i>Language</span>
+                                <span><i class="fas fa-globe-asia"></i>言語設定</span>
                             </div>
                             <ul class="dropdown-menu">
                                 <li class="dropdown-item"><a href="index.html?la=en" class="none">ENGLISH</a></li>
@@ -99,24 +99,24 @@
                     </div>
                     <div class="d-flex align-items-center p-3" style="background-color: #b81895; line-height: 1;">
                         <div><i class="fas fa-info-circle text-white"></i></div>
-                        <p class="m-0 px-4 text-white">I will reply within 24hours.</p>
+                        <p class="m-0 px-4 text-white">24時間以内にお返事いたします。</p>
                     </div>
                     <form action="nao.form.en.php" method="POST" class="container my-5">
                         <div class="form-group">
-                            <label for="companyName">会社名:</label>
-                            <input type="text" class="form-control" name="companyName" placeholder="Enter your company name">
+                            <label for="companyName">会社名</label>
+                            <input type="text" class="form-control" name="companyName" placeholder="ご法人のお客様の場合、ご記入ください">
                         </div>
                         <div class="form-group">
-                            <label for="name">お名前:</label>
-                            <input type="text" class="form-control" name="name" placeholder="Enter your name" required>
+                            <label for="name">お名前<small class="color-danger">*</small></label>
+                            <input type="text" class="form-control" name="name" placeholder="お名前をご記入ください" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email address:</label>
-                            <input type="email" class="form-control" name="email" placeholder="Your email address" required>
+                            <label for="email">メールアドレス<small class="color-danger">*</small></label>
+                            <input type="email" class="form-control" name="email" placeholder="メールアドレスをご記入ください。記入間違いの無いよう十分ご注意ください。" required>
                         </div>
                         <div class="form-group">
-                            <label for="comment">内容:</label>
-                            <textarea class="form-control" rows="6" name="comment" placeholder="Type your message here..." required></textarea>
+                            <label for="comment">内容<small class="color-danger">*</small></label>
+                            <textarea class="form-control" rows="6" name="comment" placeholder="お問い合わせ内容をご記入ください" required></textarea>
                         </div>
                         <div class="text-center">
                             <button type="submit" name="submit" class="btn btn-dark">送信</button>
@@ -135,27 +135,27 @@
         </div>
         <div class="text-center fraunces">
             <img class="rounded-circle img-fluid" style="width:85px;" src="https://edabit-avatars.s3-us-west-1.amazonaws.com/QgynNjKvNCQG2o3qF/1613394717566-undefined" alt="my picture">
-            <h5 class="mt-3">Naoko Morris</h5>
+            <h5 class="mt-3">モーリス 菜央子</h5>
         </div>
 
         <hr class="mx-auto">
 
         <ul class="my-4">
             <li class="menu_items py-3">
-                <div><a href="#aboutMe" class="none">About Me</a></div>
+                <div><a href="#aboutMe" class="none">自己紹介</a></div>
             </li>
             <li class="menu_items py-3">
-                <div><a href="#portfolio" class="none">Works</a></div>
+                <div><a href="#portfolio" class="none">作品集</a></div>
             </li>
             <li class="menu_items py-3">
-                <div class="cursor" data-toggle="modal" data-target="#modalContact">CONTACT</div>
+                <div class="cursor" data-toggle="modal" data-target="#modalContact">お問い合わせ</div>
             </li>
         </ul>
 
 
         <div class="py-3">
             <a data-toggle="collapse" data-target=".lang" class="none">
-                <i class="fas fa-globe-europe mr-1"></i>Language
+                <i class="fas fa-globe-europe mr-1"></i>言語設定
                 <i class="ml-2 fas fa-chevron-right" style="float: none"></i>
             </a>
             <!--COLLAPSE-->
@@ -176,7 +176,7 @@
         <div>
             <h2 class="fraunces">こんにちは！</h2>
             <h1 class="fraunces display-4">モーリス菜央子のポートフォリオサイトです。</h1>
-            <h4 class="fraunces"><i id="aboutMe">Junior web developer, based in the UK</i></h4>
+            <h4 class="fraunces"><i id="aboutMe">Webエンジニアとして、英国を拠点に活動しています。</i></h4>
         </div>
     </div>
 
@@ -189,19 +189,22 @@
             <div class="col-md-7 col-sm-12 mb-5">
                 <h2 class="d-inline fraunces" style="color: #908F8F;">About me</h2>
                 <div class="my-5 text-center">
-                    <span class="d-block font-weight-bold">D.O.B : 31st May 1989</span>
-                    <span class="d-block font-weight-bold">Nationality : Japanese</span>
+                    <span class="d-block font-weight-bold">1989年5月31日生まれ</span>
+                    <!-- <span class="d-block font-weight-bold">Nationality : Japanese</span> -->
                 </div>
                 <div class="container aboutMe_p">
                     <p>大阪で生まれ育ち30年暮らしたのち、結婚を機に2020年に英国へ移住しました。</p>
-                    <p>2020年3月からプログラミングを独学で学習し始めました。 I had been working in the fashion industry in the fashion industry as a seller, product designer and a merchandizer when I was living in Japan, however I could find very few fashion
-                        companies in my area, so I decided it would be better to switch to a new field in order to begin a new career in the UK.</p>
-                    <p>I’ve been keenly studying coding every day whilst being employed as a junior web developer in the UK. I would like to develop my skills and get experienced in this industry, so If you're interested in refurbish your websites for your
-                        business, feel free to contact me. <i class="fas fa-angle-double-right mx-3"></i><button class="btn border btn-dark btn-sm m-2" data-toggle="modal" data-target="#modalContact">CONTACT</button></p>
+                    <p>日本に住んでいた頃はアパレル業界で法人営業・商品企画・マーチャンダイザーとして働いていましたが、
+                        現在住んでいるエリアにはアパレル関係の会社がとても少ないことが分かり、業界を変えて新たな分野に挑戦すべきだと考え、
+                        2020年3月からプログラミングを学習し始めました。
+
+                    <p>現在は英国内の企業にてWebエンジニアとして働きながらオリジナルのWebサービスの作成などに取り組んでいます。
+                        ホームページ更新・作成などのご依頼はお問い合わせフォームからお気軽にご連絡ください。
+                        <i class="fas fa-angle-double-right mx-3"></i><button class="btn border btn-dark btn-sm m-2" data-toggle="modal" data-target="#modalContact">CONTACT</button></p>
                 </div>
                 <hr class="my-5 mx-auto" style="width: 70%;">
                 <div class="container">
-                    <h4 class="fraunces">使用言語</h4>
+                    <h4 class="fraunces">スキル</h4>
                     <div class="container">
                         <div class="my-4 px-4">
                             <h5>ENGLISH</h5><span class="badge badge-dark mt-1">TOEIC 855</span> <span class="badge badge-dark">IELTS 000</span>
@@ -210,7 +213,7 @@
                             </div>
                         </div>
                         <div class="px-4">
-                            <h5>JAPANESE</h5><span class="badge badge-dark mt-1">NATIVE</span>
+                            <h5>JAPANESE</h5><span class="badge badge-dark mt-1">母国語</span>
                             <div class="progress">
                                 <div class="mt-1 progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">100%</div>
                             </div>
@@ -220,19 +223,20 @@
             </div>
             <div class="desk_md col-md-5 col-sm-12">
                 <div class="row">
-                    <img class="img-fluid" src="https://images.unsplash.com/photo-1602506860736-c4511f592bed?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="desk picture">
+                    <img class="img-fluid" width="100%" src="https://images.unsplash.com/photo-1602506860736-c4511f592bed?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="desk picture">
                 </div>
             </div>
             <div class="desk_sm col-sm-12 mb-5">
                 <div class="row p-4">
-                    <img class="img-fluid" src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80" alt="desk picture">
+                    <img class="img-fluid" width="100%" src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1352&q=80" alt="desk picture">
                 </div>
             </div>
         </div>
 
         <!-- PORTFOLIO -->
         <div id="portfolio">
-            <h2 class="my-5 d-inline fraunces" style="color: #908F8F;">My Recent Works</h2>
+            <h2 class="my-5 d-inline fraunces" style="color: #908F8F;">作品集</h2>
+            <span>順次更新していきます</span>
             <div class="works">
                 <div class="front my-3">                    
                     <div>
@@ -254,7 +258,7 @@
 
         <!-- PAGE TOP -->
         <div class="clearfix text-center my-5">
-            <a href="#top" class="fraunces none float-right pagetop"><i class="fas fa-arrow-alt-circle-up d-block" style="font-size: 33px;"></i><span style="font-size: 12px;">PAGE TOP</span></a>
+            <a href="#top" class="fraunces none float-right pagetop"><i class="fas fa-arrow-alt-circle-up d-block" style="font-size: 33px;"></i><span style="font-size: 12px;">TOPへ戻る</span></a>
         </div>
         
     </div>
@@ -263,7 +267,7 @@
         <div class="row">
             <ul class="mx-auto text-center">
                 <li>
-                    <h4 class="fraunces">Naoko Morris</h4>
+                    <h4 class="fraunces">モーリス 菜央子</h4>
                 </li>
                 <li class="my-3"><a href="https://www.instagram.com/suzuran7053/" class="none"><i class="fab fa-instagram"></i></a></li>
                 
