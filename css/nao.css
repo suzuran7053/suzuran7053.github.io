@@ -73,7 +73,7 @@ li {
 /*--- HEADER ---*/
 
 #topimg {
-    background-image: url("./images/yoksel-zok-FXubtvkCtss-unsplash.jpg");
+    background-image: url("/images/yoksel-zok-FXubtvkCtss-unsplash.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
