@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a,
+a:hover {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+li {
+    text-decoration: none !important;
+    list-style: none;
+    display: inline-block;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.font {
+    font-family: 'Bevan', cursive;
+}
+
+nav {
+    color: rgb(70, 69, 69);
+}
+
+.active {
+    border-bottom: dotted 6px #f5a5ff;
+}
+
+#nav {
+    align-items: flex-end;
+}
+
+#nav-small,
+#mySidenav {
+    display: none;
+}
+
+.sns_box {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
+
+.sns:hover {
+    color: #cf7eda;
+}
+
+.home {
+    background-image: url("images/3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    min-height: 500px;
+}
+
+.home-box {
+    margin-left: 20px;
+    background-color: rgba(255, 255, 255, 0.76);
+}
+
+.mailing {
+    background-color: #cf7eda;
+}
+
+.story {
+    /*height: 500px;*/
+    background-image: url("images/2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.story a {
+    background-color: #cacacacb;
+    border: none;
+}
+
+.story a:hover {
+    background-color: #5d5c5ecb;
+}
+
+.story p,
+.flavours p {
+    font-size: 1.0em;
+    color: rgb(255, 255, 255)
+}
+
+.story div {
+    padding: 80px;
+}
+
+.shops {
+    padding: 40px;
+    margin: 20px;
+    border-radius: 15px;
+    border: dotted 8px rgb(225, 253, 101);
+}
+
+.shops:hover {
+    background-color: rgb(225, 253, 101);
+    cursor: pointer;
+}
+
+.flavours {
+    /*height: 500px;*/
+    background-image: url("images/modal.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.image-box {
+    position: relative;
+    width: 35%;
+    cursor: pointer;
+}
+
+.image-box:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+
+.image-box img {
+    position: absolute;
+    width: 12vw;
+    height: 12vw;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    object-fit: cover;
+    border-radius: 999px;
+    opacity: 1;
+}
+
+.image-box img:hover {
+    opacity: 0.5;
+}
+
+.image-box img {
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.image-box:hover img {
+    opacity: 0.3;
+}
+
+.container:hover,
+.middle:hover {
+    opacity: 1;
+}
+
+.text {
+    color: black;
+    font-size: 25px;
+    padding: 16px 32px;
+    font-family: 'Bevan', cursive;
+}
+
+@media(max-width: 992px) {
+    .story div {
+        padding: 40px;
+    }
+}
+
+@media(max-width: 767px) {
+    #nav-big {
+        display: none;
+    }
+    #nav-small {
+        display: block;
+    }
+    #mySidenav {
+        display: block;
+        height: 100%;
+        width: 0px;
+        position: fixed;
+        z-index: 10000;
+        top: 0;
+        right: 0;
+        background-color: rgba(218, 250, 142, 0.801);
+        overflow-x: hidden;
+        /* Disable horizontal scroll */
+        transition: 0.5s;
+        overflow: auto;
+        color: rgb(61, 61, 61);
+    }
+    #mySidenav li {
+        padding-top: 23px;
+    }
+    .home {
+        min-height: 370px;
+    }
+    .home-box {
+        margin: 0px auto;
+    }
+    .story div {
+        padding: 30px;
+    }
+    .flavours p {
+        font-size: .8em;
+    }
+}
+
+@media(max-width: 576px) {
+    #shops .row {
+        margin: 20px 0px;
+    }
+    .home {
+        min-height: 300px;
+    }
+    .story p {
+        font-size: .8em;
+    }
+    .story div {
+        padding: 10px;
+    }
+}
+
+@media(min-width: 992px) {
+    .home {
+        min-height: 600px;
+    }
+}
