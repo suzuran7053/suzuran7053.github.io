@@ -217,6 +217,7 @@ nav {
     }
     .home-box {
         margin: 0px auto;
+        background-color: rgba(255, 255, 255, 0.557);
     }
     .story div {
         padding: 30px;
