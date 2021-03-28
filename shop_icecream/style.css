@@ -54,7 +54,7 @@ nav {
 .home {
     background-image: url("images/3.jpg");
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
     min-height: 500px;
 }
 
@@ -71,7 +71,7 @@ nav {
     /*height: 500px;*/
     background-image: url("images/2.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 
 .story a {
@@ -109,7 +109,11 @@ nav {
     /*height: 500px;*/
     background-image: url("images/modal.jpg");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+}
+
+.mini {
+    display: none;
 }
 
 .image-box {
@@ -126,8 +130,8 @@ nav {
 
 .image-box img {
     position: absolute;
-    width: 12vw;
-    height: 12vw;
+    width: 18vw;
+    height: 18vw;
     top: 0;
     right: 0;
     bottom: 0;
@@ -234,6 +238,9 @@ nav {
     }
     .story div {
         padding: 10px;
+    }
+    .mini {
+        display: block;
     }
 }
 
