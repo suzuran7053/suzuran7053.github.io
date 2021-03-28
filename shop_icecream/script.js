@@ -1,8 +1,8 @@
 $(document).ready(function() { //Necessary
 
-    /*  setTimeout(function() {
+    setTimeout(function() {
          $("#myModal").modal('show')
-     }, 2000); */
+     }, 2000);
 
     //ARRANGE MINOR POSITION FOR <a> #ID LINK
     $(window).on("hashchange", function() {
