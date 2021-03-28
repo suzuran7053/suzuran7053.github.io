@@ -176,7 +176,7 @@ nav {
 
 .text {
     color: black;
-    font-size: 25px;
+    font-size: 3vw;
     padding: 16px 32px;
     font-family: 'Bevan', cursive;
 }
@@ -224,6 +224,9 @@ nav {
     .flavours p {
         font-size: .8em;
     }
+    .mini {
+        display: inline-block;
+    }
 }
 
 @media(max-width: 576px) {
@@ -238,9 +241,6 @@ nav {
     }
     .story div {
         padding: 10px;
-    }
-    .mini {
-        display: block;
     }
 }
 
