@@ -56,6 +56,10 @@ h3 {
     background-repeat: no-repeat;
 }
 
+#aboutme.p{
+    width: 80vw;
+}
+
 
 section>div {
     width: 65vw;
