@@ -103,3 +103,9 @@ hr {
         display: block;
     }
 }
+
+@media(max-width:992px){
+    .me{
+        width: 80vw;
+    }
+}
