@@ -56,9 +56,13 @@ h3 {
     background-repeat: no-repeat;
 }
 
-#aboutme.p{
-    width: 90vw;
+.profile {
+    width: 20vw;
+    max-width: 220px;
+    border-radius: 999px;
+    margin-top: -40px;
 }
+
 
 section>div {
     width: 65vw;
