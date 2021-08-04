@@ -8,7 +8,6 @@ $(document).ready(function() {
     $("#closebtn").click(function() {
         $("#ham").css("width", "0px");
     })
-
     $(".icon").hover(function() {
         $(this).toggleClass("animate__animated animate__rubberBand");
     })
@@ -17,5 +16,8 @@ $(document).ready(function() {
     })
     $(".site").hover(function() {
         $(this).toggleClass("animate__animated animate__pulse");
+    })
+    $(".nav-link").hover(function() {
+        $(this).toggleClass("animate__animated animate__swing text-light");
     })
 });
