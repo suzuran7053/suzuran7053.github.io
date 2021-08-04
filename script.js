@@ -1,15 +1,16 @@
-function closeNav() {
-    $('#ham').css('width', '0');
-}
-
-function openNav() {
-    $('#ham').css('width', '300px');
-}
-
 $(document).ready(function() {
-    $("#icon").hover(function(){
-        $(this).animate({height: "+10px", width: "+10px"}, slow);
-    }, function(){
-        $(this).animate({height: "-10px", width: "-10px"}, slow);  
+    $("#translation").hover(function() {
+        $(this).toggleClass("animate__animated animate__bounce");
     })
+    $("#bar").click(function() {
+        $("#ham").css("width", "250px");
+    })
+    $("#closebtn").click(function() {
+        $("#ham").css("width", "0px");
+    })
+
+    $(".icon").hover(function() {
+        $(this).toggleClass("animate__animated animate__rubberBand");
+    })
+
 });
