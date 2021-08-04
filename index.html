@@ -23,6 +23,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+    <!-- Animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- MY JS -->
     <script src="script.js"></script>
@@ -43,13 +47,13 @@
 
         <ul class="navbar-nav ml-auto" id="nav_sm">
             <li class="nav-item">
-                <div onclick="openNav()"><i class="fas fa-bars" style="font-size: 30px;"></i></div>
+                <div id="bar"><i class="fas fa-bars" style="font-size: 30px;"></i></div>
             </li>
         </ul>
     </nav>
     <div id="ham">
         <div class="pt-5 text-right">
-            <a class="none closebtn" style="font-size: 1.5em;" href="javascript:void(0)" onclick="closeNav()"><i class="fas fa-times mr-3"></i></a>
+            <a class="none closebtn" style="font-size: 1.5em;" id="closebtn"><i class="fas fa-times mr-3"></i></a>
         </div>
         <nav>
             <ul class="navbar-nav text-center font2">
@@ -57,7 +61,7 @@
                 <li class="nav-item mt-3"><a class="nav-link" href="#skillset">Skill set</a></li>
                 <li class="nav-item mt-3"><a class="nav-link" href="#projects">Projects</a></li>
                 <li class="nav-item mt-3"><a class="nav-link" href="#languages">Languages</a></li>
-                <!-- <li class="nav-item mt-3"><a class="nav-link" href="#contact">Contact</a></li> -->
+                <li class="nav-item mt-3"><a class="nav-link" href="mailto:naoko.morris1210@gmail.com">Contact</a></li>
             </ul>
             <div class="text-center mt-5"><a href="https://www.instagram.com/suzuran7053/"><img src="images/instagram.png" alt="instagram" class="image-fluid" style="width:25px;"></a></div>
         </nav>
@@ -65,7 +69,7 @@
 
 
 
-   <!-- ABOUT ME-->
+    <!-- ABOUT ME-->
     <section id="aboutme">
         <div class="font">
             <h1>Naoko Morris</h1>
@@ -78,7 +82,7 @@
     <div class="text-center">
         <img src="images/Profile_21021.jpg" alt="ProfilePicture" class="image-fluid" id="profile">
     </div>
-   
+
     <section class="mt-5">
         <div class="mx-auto text-center me">
             <p class="text-white font2">I was born and raised in Osaka, Japan and lived there for thirty years. I moved to the UK permanently in February 2020.
@@ -117,12 +121,12 @@
                 <h3>Adobe</h3>
                 <ul>
                     <li><img src="images/xd.png" alt="" class="image-fluid icon"></li>
-                    
+
                 </ul>
             </div>
 
         </div>
-        
+
 
     </section>
 
@@ -136,7 +140,7 @@
         <h2 class="display-4">Languages</h2>
         <p class="font2">My native language is Japanese. I have over 10 years experience to work in Japanese E-Commerce field, especially in the women apparel industry.
             I've been keenly learning English to interact with people in the UK.</p>
-        <div class="text-right">
+        <div class="text-right" id="translation">
             <a href="https://suzuran.epizy.com/" class="text-warning"><i class="fas fa-angle-right mr-2 text-warning"></i>See My Translation Works</a>
         </div>
         <div class="row mx-auto">
@@ -165,14 +169,14 @@
     <section class="container-fluid my-5 project text-center" id="projects">
         <h2 class="display-4">Original Web Projects</h2>
         <p class="font2">These are my original web projects. Have a try!</p>
-        <div class="row justify-content-between mx-auto">            
+        <div class="row justify-content-between mx-auto">
             <div class="col-lg-6 mt-3">
                 <a href="https://wrestlingnonsense.epizy.com/">
                     <img src="images/wrestlingnonsense.png" alt="" class="image-fluid">
                 </a>
             </div>
             <div class="col-lg-6 mt-3">
-                <a href="https://suzuran.epizy.com/">                    
+                <a href="https://suzuran.epizy.com/">
                     <img src="images/translation.jpg" alt="" class="image-fluid">
                 </a>
             </div>
@@ -185,7 +189,7 @@
                 <a href="">
                     <img src="images/cms_construction.jpg" alt="" class="image-fluid">
                 </a>
-            </div>            
+            </div>
         </div>
     </section>
 
@@ -220,7 +224,8 @@
     <section class="container-fluid websites mt-5 text-center">
         <div class="mx-auto">
             <p class="codepen" data-height="300" data-theme-id="dark" data-default-tab="js,result" data-slug-hash="MWmqeqX" data-user="suzuran7053" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
-            <span>See the Pen <a href="https://codepen.io/suzuran7053/pen/MWmqeqX">jQuery: Colour Animation Cards</a> by suzuran705 (<a href="https://codepen.io/suzuran7053">@suzuran7053</a>) on <a href="https://codepen.io">CodePen</a>.</span></p>
+                <span>See the Pen <a href="https://codepen.io/suzuran7053/pen/MWmqeqX">jQuery: Colour Animation Cards</a> by suzuran705 (<a href="https://codepen.io/suzuran7053">@suzuran7053</a>) on <a href="https://codepen.io">CodePen</a>.</span>
+            </p>
             <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
         </div>
     </section>
@@ -239,14 +244,14 @@
                 <li class="col-md m-1"><a href="#projects">Projects</a></li>
                 <li class="col-md m-1"><a href="#skillset">Skill set</a></li>
                 <li class="col-md m-1"><a href="#languages">Languages</a></li>
-                <!-- <li class="col-md m-1"><a href="#contact">Contact</a></li> -->
-            </ul>            
+                <li class="col-md m-1"><a href="mailto:naoko.morris1210@gmail.com">Contact</a></li>
+            </ul>
             <div class="text-center m-3"><a href="https://www.instagram.com/suzuran7053/"><img src="images/instagram.png" alt="instagram" class="image-fluid" style="width:25px;"></a></div>
             <div class="text-center mb-3 font2"><small>&copy;Naoko Morris</small></div>
-        </nav>        
+        </nav>
     </footer>
-    
-      <!-- jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </body>
