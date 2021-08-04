@@ -12,7 +12,10 @@ $(document).ready(function() {
     $(".icon").hover(function() {
         $(this).toggleClass("animate__animated animate__rubberBand");
     })
-    $(".pro, .site").hover(function() {
-        $(this).toggleClass("animate__animated animate__fadeInDown");
+    $(".pro").hover(function() {
+        $(this).toggleClass("animate__animated animate__pulse");
+    })
+    $(".site").hover(function() {
+        $(this).toggleClass("animate__animated animate__pulse");
     })
 });
