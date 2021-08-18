@@ -97,7 +97,7 @@ hr {
 
 @media(max-width:768px) {
     #nav_lg,
-    #nav_insta {
+    #nav_codepen {
         display: none;
     }
     #nav_sm {
