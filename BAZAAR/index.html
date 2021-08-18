@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Duplicate - Harper's BAZAAR</title>
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon:ital@0;1&family=Playfair+Display:ital@1&family=Pinyon+Script&family=Spartan:wght@300&family=Tenor+Sans&family=Pinyon+Script&family=Playfair+Display&display=swap" rel="stylesheet">
+    <!-- FONTAWESOME -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!--HAM-->
+  <div id="mySidenav" class="ham">
+    <div class="src_box d-flex justify-content-between">
+      <div class="search_box pointer" id="hamSearch">
+        <i class="fas fa-search"></i><span>SEARCH</span>
+      </div>
+      <div>
+        <a class="closebtn text-center float-right" href="javascript:void(0)" onclick="closeNav()"><i class="fas fa-times"></i></a>
+      </div>
+    </div>
+
+    <hr>
+
+    <ul>
+      <li class="menu_items">
+        <div><a rel="#">ShopBAZAAR</a></div>
+      </li>
+
+      <li class="menu_items" data-toggle="collapse" data-target="#me_subscribe">
+        <div><a rel="">Subscribe<i class="fas fa-chevron-right"></i></a></div>
+      </li>
+      <!--COLLAPSE-->
+      <li id="me_subscribe" class="collapse menu_items collapse_items">
+        <div>
+          <a rel="">Give a Gift</a>
+        </div>
+      </li>
+
+      <li class="menu_items" data-toggle="collapse" data-target=".me_fashion">
+        <div><a rel="#fashion">Fashion<i class="fas fa-chevron-right"></i></a></div>
+      </li>
+      <!--COLLAPSE-->
+      <li class="me_fashion collapse menu_items collapse_items">
+        <div>
+          <a rel="">All Fashion Shows</a>
+        </div>
+      </li>
+      <li class="me_fashion collapse menu_items collapse_items">
+        <div>
+          <a rel="">Street Style</a>
+        </div>
+      </li>
+      <li class="me_fashion collapse menu_items collapse_items">
+        <div>
+          <a rel="">Trends & Shopping Guides</a>
+        </div>
+      </li>
+      <li class="me_fashion collapse menu_items collapse_items">
+        <div>
+          <a rel="">Fashion Photography</a>
+        </div>
+      </li>
+      <li class="me_fashion collapse menu_items collapse_items">
+        <div>
+          <a rel="">Fashion Designers</a>
+        </div>
+      </li>
+      <li class="me_fashion collapse menu_items collapse_items">
+        <div>
+          <a rel="">Fashion Models</a>
+        </div>
+      </li>
+      <li class="me_fashion collapse menu_items collapse_items">
+        <div>
+          <a rel="">Spring Fashion</a>
+        </div>
+      </li>
+      <li class="me_fashion collapse menu_items collapse_items">
+        <div>
+          <a rel="">Summer Fashion</a>
+        </div>
+      </li>
+      <li class="me_fashion collapse menu_items collapse_items">
+        <div>
+          <a rel="">Fall Fashion</a>
+        </div>
+      </li>
+      <li class="me_fashion collapse menu_items collapse_items">
+        <div>
+          <a rel="">Winter Fashion</a>
+        </div>
+      </li>
+
+      <li class="menu_items">
+        <div><a rel="">Fitness</a></div>
+      </li>
+
+
+      <li class="menu_items" data-toggle="collapse" data-target=".me_brides">
+        <div><a rel="">Bazaar Brides<i class="fas fa-chevron-right"></i></a></div>
+      </li>
+      <!--COLLAPSE-->
+      <li class="me_brides collapse menu_items collapse_items">
+        <div>
+          <a rel="">Wedding Fashion</a>
+        </div>
+      </li>
+      <li class="me_brides collapse menu_items collapse_items">
+        <div>
+          <a rel="">Wedding Planning</a>
+        </div>
+      </li>
+      <li class="me_brides collapse menu_items collapse_items">
+        <div>
+          <a rel="">Real Weddings</a>
+        </div>
+      </li>
+      <li class="me_brides collapse menu_items collapse_items">
+        <div>
+          <a rel="">Wedding Beauty</a>
+        </div>
+      </li>
+
+
+      <li class="menu_items">
+        <div><a rel="#latest">Latest</a></div>
+      </li>
+      <li class="menu_items">
+        <div><a rel="">CR Fashion Book</a></div>
+      </li>
+
+
+      <li class="menu_items" data-toggle="collapse" data-target=".me_thelist">
+        <div><a rel="">#TheLIST<i class="fas fa-chevron-right"></i></a></div>
+      </li>
+      <!--COLLAPSE-->
+      <li class="me_thelist collapse menu_items collapse_items">
+        <div><a rel="">The Style List</a></div>
+      </li>
+      <li class="me_thelist collapse menu_items collapse_items">
+        <div><a rel="">The Beauty List</a></div>
+      </li>
+      <li class="me_thelist collapse menu_items collapse_items">
+        <div><a rel="">The Culture List</a></div>
+      </li>
+      <li class="me_thelist collapse menu_items collapse_items">
+        <div><a rel="">The Shopping List</a></div>
+      </li>
+      <li class="me_thelist collapse menu_items collapse_items">
+        <div><a rel="">The Best Dressed List</a></div>
+      </li>
+
+
+      <li class="menu_items">
+        <div><a rel="">All Videos</a></div>
+      </li>
+      <li class="menu_items">
+        <div><a rel="">Newsletter</a></div>
+      </li>
+      <li class="menu_items">
+        <div><a rel="">TheBUZZ</a></div>
+      </li>
+      <li class="menu_items">
+        <div><a rel="">Giveaways</a></div>
+      </li>
+
+
+
+      <li class="sm" data-toggle="collapse" data-target=".me_country"><i class="fas fa-globe-europe"></i>United States<i class="fas fa-chevron-right" style="float: none"></i></li>
+      <!--COLLAPSE-->
+      <li class="sm me_country collapse"><a rel="">US</a></li>
+      <li class="sm me_country collapse"><a rel="">UK</a></li>
+      <li class="sm me_country collapse"><a rel="">España</a></li>
+      <li class="sm me_country collapse"><a rel="">Italia</a></li>
+      <li class="sm me_country collapse"><a rel="">Nederland</a></li>
+      <li class="sm me_country collapse"><a rel="">台灣</a></li>
+      <li class="sm me_country collapse"><a rel="">Japan</a></li>
+
+      <li class="donotsell">
+        <div><a rel="" class="sm note font-weight-bold">Do Not Sell My Personal Information</a></div>
+      </li>
+      <span class="xs">PRIVACY NOTICE/NOTICE AT COLLECTION</span>
+      <span class="xs">TERMS OF USE</span>
+    </ul>
+
+  </div>
+
+  <!--NAVBAR MODAL (SEARCH)-->
+  <div class="ham_search modal" id="ham_modal">
+    <span id="ham_close" class="close float-right pointer" style="color: white;">&times;</span>
+    <form>
+      <input class="ham_input border-0 text-white" type="text" placeholder="search">
+    </form>
+    <hr>
+    <span class="ham_span text-white">Type Keyword(s) to search</span>
+  </div>
+
+
+
+
+  <header>
+    <div id="header-box" class="text-center">
+      <h1 id="header-h1" class="d-inline text-white">The Best Wedding Dresses To Shop Now</h1>
+    </div>
+  </header>
+
+  <!--MENU-->
+  <nav id="menu-wrapper" class="d-flex">
+    <div id="menu-box">
+      <span id="bar"><i class="fas fa-bars" style="color: #a52444; font-size: 25px"></i></span>
+      <a href="https://www.harpersbazaar.com/#"><img class="logo" src="data:image/png;base64,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"
+                                                     alt="BAZAAR logo"></a>
+    </div>
+    <div id="link-box">
+      <a id="subscribe" href="https://store.harpersbazaar.com/harper-s-bazaar-magazine.html?source=har_topnav" class="text-white">SUBSCRIBE</a>
+      <a href="https://www.harpersbazaar.com/auth/csrf?action=login&return_url=https%3A%2F%2Fwww.harpersbazaar.com%2F">SIGN IN</a>
+    </div>
+  </nav>
+
+  <div class="ad">
+    <a href="https://www.goodhousekeepingholidays.com/"><img class="ad-img" src="https://tpc.googlesyndication.com/simgad/6244991018594837628" alt="advertisement"></a>
+  </div>
+
+
+  <!--1-->
+  <section id="sec-1-wrapper">
+    <div id="sec-1">
+      <div id="sec-1-img">
+        <a href="#"><img src="https://images.unsplash.com/photo-1584628899727-dddeb7284434?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=843&q=80" alt="Plus-Size Fashion"></a>
+      </div>
+      <div id="sec-1-p">
+        <a href="#">Abisola Omole Makes Plus-Size Fashion Work for Her—in Spite of Industry Failings</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="ad-mini">
+    <a href="#"><img src="https://tpc.googlesyndication.com/simgad/14648865389466014497" alt="advertisement"></a>
+  </div>
+  <!--2-->
+  <section id="sec-2-wrapper">
+    <div id="sec-2-left">
+      <div id="sec-2-main-img">
+        <a href="#"><img src="https://images.unsplash.com/photo-1499946981954-e7f4b234d7fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" alt="plant"></a>
+      </div>
+      <a href="#">
+        <p id="sec-2-main-p">The Wall of Moms Got Your Attention, but Mothers Have Always Been Fighting for Change</p>
+      </a>
+      <div id="sec-2-mini-wrapper">
+        <div class="max800-wrapper">
+          <a href="#"><img class="sec-2-pics" src="https://images.unsplash.com/photo-1591034455539-0352f7ed55ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=801&q=80" alt="black people"></a>
+          <a href="#">
+            <p class="sec-2-ps">Today Marks Black Women’s Equal Pay Day</p>
+          </a>
+        </div>
+        <div class="max800-wrapper">
+          <a href="#"><img class="sec-2-pics" src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="a young girl"></a>
+          <a href="#">
+            <p class="sec-2-ps">Breonna Taylor Featured on the Cover of Oprah Mag</p>
+          </a>
+        </div>
+        <div class="max800-wrapper">
+          <a href="#"><img class="sec-2-pics" src="https://images.unsplash.com/photo-1489667897015-bf7a9e45c284?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=806&q=80" alt="an african woman"></a>
+          <a href="#">
+            <p class="sec-2-ps">How to Demand Justice for Breonna Taylor</p>
+          </a>
+        </div>
+        <div class="max800-wrapper">
+          <a href="#"><img class="sec-2-pics" src="https://images.unsplash.com/photo-1511821057783-3edeee215a67?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="a pawerful woman"></a>
+          <a href="#">
+            <p class="sec-2-ps">NYPD Pulls a BLM Protester into an Unmarked Van</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="sec-2-right ad">
+      <a href="https://letsgo.tripactions.com/ppc-demo-get-started-emea/?utm_medium=cpc&utm_source=bing&utm_campaign=UK%7CBing%7CSearch%7CNB-Core-Agency%7CDesktop%7CExact%7CFM&utm_adgroup=Travel|General&utm_content=&utm_term=travel%20agency&device=c&network=o&msclkid=059761031a88194794ee01170de587e5"><img src="https://tpc.googlesyndication.com/simgad/15119274916333928513" alt="advertisement"></a>
+    </div>
+    <div class="ad-mini">
+      <a href="https://letsgo.tripactions.com/ppc-demo-get-started-emea/?utm_medium=cpc&utm_source=bing&utm_campaign=UK%7CBing%7CSearch%7CNB-Core-Agency%7CDesktop%7CExact%7CFM&utm_adgroup=Travel|General&utm_content=&utm_term=travel%20agency&device=c&network=o&msclkid=059761031a88194794ee01170de587e5"><img src="https://tpc.googlesyndication.com/simgad/14648865389466014497" alt="advertisement"></a>
+    </div>
+  </section>
+
+  <!--FASHION-->
+  <div class="title" id="fashion">
+    <p>FASHION</p>
+  </div>
+  <section class="cssgrid sec-3-wrapper">
+    <div>
+      <a href="#"><img class="sec-3-pics" src="https://images.unsplash.com/photo-1591253368336-a4409e39df7b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="wedding dresses"></a>
+      <a href="#" class="sec-3-ps">Three Highlights from Copenhagen Fashion Week</a>
+    </div>
+    <div>
+      <a href="#"><img class="sec-3-pics" src="https://images.unsplash.com/photo-1591561954555-607968c989ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=814&q=80" alt="a new bag"></a>
+      <a href="#" class="sec-3-ps">12 Style Hacks from Copenhagen Fashion Week</a>
+    </div>
+    <div>
+      <a href="#"><img class="sec-3-pics" src="https://images.unsplash.com/photo-1558821139-a657b6cd617d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=847&q=80" alt="a anime costume"></a>
+      <a href="#" class="sec-3-ps">Fall Jewelry Trends for Now and Later</a>
+    </div>
+    <div>
+      <a href="#"><img class="sec-3-pics" src="https://images.unsplash.com/photo-1596013228703-f678b07ed96f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="a woman wearing a new dress"></a>
+      <a href="#" class="sec-3-ps">The Best of the Resort 2021 Runways</a>
+    </div>
+  </section>
+
+
+  <div class="ad">
+    <a href="https://www.goodhousekeepingholidays.com/"><img src="https://tpc.googlesyndication.com/simgad/6244991018594837628" alt="advertisement"></a>
+  </div>
+
+
+  <!--FITNESS-->
+  <div class="title" id="fitness">
+    <p>FITNESS</p>
+  </div>
+  <section class="cssgrid sec-3-wrapper">
+    <div>
+      <a href="#"><img class="sec-3-pics" src="https://images.unsplash.com/photo-1565294124524-200bb738cdb7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=794&q=80" alt="a fitness woman"></a>
+      <a href="#" class="sec-3-ps">15 best glute exercises to do for serious results</a>
+    </div>
+    <div>
+      <a href="#"><img class="sec-3-pics" src="https://images.unsplash.com/photo-1485727749690-d091e8284ef3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="a stretching woman"></a>
+      <a href="#" class="sec-3-ps">Try this 30-min strength & stretch workout</a>
+    </div>
+    <div>
+      <a href="#"><img class="sec-3-pics" src="https://images.unsplash.com/photo-1515573866280-06bda6d4e16f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="a healthy food"></a>
+      <a href="#" class="sec-3-ps">'I worked out like Halle Berry for a week'</a>
+    </div>
+    <div>
+      <a href="#"><img class="sec-3-pics" src="https://images.unsplash.com/photo-1579804234303-30797fe9c837?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="a gym cloth"></a>
+      <a href="#" class="sec-3-ps">12 luxe pairs of luxe gym leggings we love</a>
+    </div>
+  </section>
+
+
+  <!--ROYALS & ENTERTAINMENT & BAZAAR AT WORK -->
+  <section class="rea-wrapper">
+    <div id="royals">
+      <div class="rea-boxes rea-titles">
+        <h3>ROYALS</h3>
+      </div>
+      <div class="rea-boxes">
+        <a href="#"><img class="rea-pics" src="https://images.unsplash.com/photo-1592903189708-add4d2987b1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt=" a book"></a>
+        <a href="#" class="rea-a">Meghan's genius packing tip, revealed</a>
+      </div>
+      <div class="rea-boxes">
+        <a href="#"><img class="rea-pics" src="https://images.unsplash.com/photo-1519915212116-7cfef71f1d3e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="inside a castle"></a>
+        <a href="#" class="rea-a">Is Prince Harry legally allowed to vote?</a>
+      </div>
+      <div class="rea-boxes">
+        <a href="#"><img class="rea-pics" src="https://images.unsplash.com/photo-1591786336481-0720d012fbd3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="a room"></a>
+        <a href="#" class="rea-a">Princess Anne marks 70th birthday with new photos</a>
+      </div>
+      <div class="rea-boxes">
+        <a href="#"><img class="rea-pics" src="https://images.unsplash.com/photo-1556970255-32d2cec67cbc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="a book with a flower"></a>
+        <a href="#" class="rea-a">Meghan opens up about moving back to the US</a>
+      </div>
+    </div>
+
+    <div id="entertainment">
+      <div class="rea-boxes rea-titles">
+        <h3>ENTERTAINMENT</h3>
+      </div>
+      <div class="rea-boxes">
+        <a href="#"><img class="rea-pics" src="https://images.unsplash.com/photo-1562098403-69c787eb5d34?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="a stylish woman"></a>
+        <a href="#" class="rea-a">Elizabeth Debicki to play Diana in The Crown</a>
+      </div>
+      <div class="rea-boxes">
+        <a href="#"><img class="rea-pics" src="https://images.unsplash.com/photo-1554412893-166e997f6c88?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="a woman wearing a blue dress"></a>
+        <a href="#" class="rea-a">The most iconic movie dresses of all time</a>
+      </div>
+      <div class="rea-boxes">
+        <a href="#"><img class="rea-pics" src="https://images.unsplash.com/photo-1542909192-2f2241a99c9d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="a photogragher"></a>
+        <a href="#" class="rea-a">Jonathan Pryce to play Prince Philip in The Crown</a>
+      </div>
+      <div class="rea-boxes">
+        <a href="#"><img class="rea-pics" src="https://images.unsplash.com/photo-1588641750012-474003b37f49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="a blonde hair woman in the yellow flowers"></a>
+        <a href="#" class="rea-a">Reese Witherspoon adapts 'Where the Crawdads Sing'</a>
+      </div>
+    </div>
+
+    <div id="at-work">
+      <div class="rea-boxes rea-titles">
+        <h3>BAZAAR AT WORK</h3>
+      </div>
+      <div class="rea-boxes">
+        <a href="#"><img class="rea-pics" src="https://images.unsplash.com/photo-1588189408846-30ad110a0f4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="workrobe"></a>
+        <a href="#" class="rea-a">Michael Kors on dressing for video calls</a>
+      </div>
+      <div class="rea-boxes">
+        <a href="#"><img class="rea-pics" src="https://images.unsplash.com/photo-1572108055708-778eb430f00c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="pink dress with black race"></a>
+        <a href="#" class="rea-a">Beyoncé is giving grants to Black-owned businesses</a>
+      </div>
+      <div class="rea-boxes">
+        <a href="#"><img class="rea-pics" src="https://images.unsplash.com/photo-1542114955-fcb277dd22f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="a smiling woman"></a>
+        <a href="#" class="rea-a">How I knew it was the right time to change careers</a>
+      </div>
+      <div class="rea-boxes">
+        <a href="#"><img class="rea-pics" src="https://images.unsplash.com/photo-1524041255072-7da0525d6b34?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="a stylish woman"></a>
+        <a href="#" class="rea-a">How to avoid post-lockdown burnout</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!--BRIDES-->
+  <div class="title" id="brides">
+    <p>BRIDES</p>
+  </div>
+  <section class="cssgrid sec-3-wrapper">
+    <div>
+      <a href="#"><img class="sec-3-pics" src="https://images.unsplash.com/flagged/photo-1572817547449-07d426df7da0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="a bride"></a>
+      <a href="#" class="sec-3-ps">15 affordable wedding dresses to consider</a>
+    </div>
+    <div>
+      <a href="#"><img class="sec-3-pics" src="https://images.unsplash.com/photo-1579583764988-3e08c6132d2a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="a wedding dress"></a>
+      <a href="#" class="sec-3-ps">10 chic bridesmaid brands to know about now</a>
+    </div>
+    <div>
+      <a href="#"><img class="sec-3-pics" src="https://images.unsplash.com/photo-1508435234994-67cfd7690508?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="a man looking at a woman"></a>
+      <a href="#" class="sec-3-ps">How and why you should plan a secret wedding</a>
+    </div>
+    <div>
+      <a href="#"><img class="sec-3-pics" src="https://images.unsplash.com/photo-1584628899727-dddeb7284434?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="black women"></a>
+      <a href="#" class="sec-3-ps">30 ideas for Autumn-wedding dressing this season</a>
+    </div>
+  </section>
+
+
+  <section id="sec-4-main-img">
+    <a href="#"><img src="https://images.unsplash.com/photo-1511945863317-d60e146e9016?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="a female designer"></a>
+  </section>
+  <a href="#">
+    <p id="sec-4-main-p">Designer Yoshika Smith on breaking into fashion, overcoming obstacles and tackling grief</p>
+  </a>
+
+
+  <!--LATEST-->
+  <div class="title" id="latest">
+    <p>LATEST</p>
+  </div>
+  <section class="cssgrid sec-3-wrapper" id="latest-wrapper">
+    <div class="latest-box">
+      <a href="#"><img class="sec-3-pics" src="https://images.unsplash.com/photo-1571839154183-6bb84a567903?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="a live house"></a>
+      <a href="#" class="sec-3-ps">A Mariah Carey & Lauryn Hill Collab Is Coming</a>
+    </div>
+    <div class="latest-box">
+      <a href="#"><img class="sec-3-pics" src="https://images.unsplash.com/photo-1577818582646-65d170ebfe1a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="stylish men"></a>
+      <a href="#" class="sec-3-ps">1Learning How to Reckon with Kanye West</a>
+    </div>
+    <div class="latest-box">
+      <a href="#"><img class="sec-3-pics" src="https://images.unsplash.com/photo-1465311354905-789ff5f7a457?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="a woman in the forest"></a>
+      <a href="#" class="sec-3-ps">Ciara Filmed "Rooted" Two Days Before Giving Birth</a>
+    </div>
+    <div class="latest-box">
+      <a href="#"><img class="sec-3-pics" src="https://images.unsplash.com/photo-1568419141482-eccdc7b62188?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="a misterious woman"></a>
+      <a href="#" class="sec-3-ps">Kali Uchis + Rico Nasty Release 'Aquí Yo Mando'</a>
+    </div>
+    <div class="latest-box">
+      <a href="#"><img class="sec-3-pics" src="https://images.unsplash.com/photo-1523374387355-b80ae0e4c776?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="lips"></a>
+      <a href="#" class="sec-3-ps">16 Scented Candles We Buy Over and Over Again</a>
+    </div>
+    <div class="latest-box">
+      <a href="#"><img class="sec-3-pics" src="https://images.unsplash.com/flagged/photo-1557786458-77474e6ff1bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="eyes"></a>
+      <a href="#" class="sec-3-ps">Watch Daniel Martin's Skin Care Routine</a>
+    </div>
+    <div class="latest-box">
+      <a href="#"><img class="sec-3-pics" src="https://images.unsplash.com/photo-1575488405241-def30132aab6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="a book"></a>
+      <a href="#" class="sec-3-ps">Who the 19th Amendment Left Behind</a>
+    </div>
+    <div>
+      <a href="#"><img class="sec-3-pics" src="https://images.unsplash.com/photo-1562798719-12a70800e5cb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="wine bottles and glasses"></a>
+      <a href="#" class="sec-3-ps">The 9 Best Celeb-Owned Wine Brands</a>
+    </div>
+  </section>
+
+
+  <!--FOOTER-->
+  <footer>
+    <div id="footer-wrapper">
+      <div class="footer-wrapper1">
+        <div>
+          <a href="#"><img class="logo" src="logo.jpg" alt="BAZAAR logo"></a>
+        </div>
+        <div id="sns-box">
+          <a href="https://www.facebook.com/HarpersBazaar"><img class="sns-icons" src="https://img.icons8.com/metro/26/000000/facebook-new--v2.png" alt="Facebook Icon"></a>
+          <a href="https://twitter.com/harpersbazaarus"><img class="sns-icons" src="https://img.icons8.com/metro/26/000000/twitter.png" alt="Twitter Icon"></a>
+          <a href="https://www.pinterest.com/harpersbazaar/?auto_follow=1"><img class="sns-icons" src="https://img.icons8.com/windows/32/000000/pinterest-p.png" alt="Pintarest Icon"></a>
+          <a href="https://instagram.com/harpersbazaarus/"><img class="sns-icons" src="https://img.icons8.com/metro/32/000000/instagram-new.png" alt="Instagram Icon"></a>
+          <a href="https://www.youtube.com/c/harpersbazaar?sub_confirmation=1"><img class="sns-icons" src="https://img.icons8.com/material-rounded/24/000000/youtube-play.png" alt="Youtube Icon"></a>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#fashion">FASHION</a></li>
+          <li><a href="#fitness">FITNESS</a></li>
+          <li><a href="#royals">ROYALS</a></li>
+          <li><a href="#entertainment">ENTERTAINMENT</a></li>
+          <li><a href="#at-work">BAZAAR AT WORK</a></li>
+          <li><a href="#brides">BRIDES</a></li>
+          <li><a href="#latest">LATEST</a></li>
+        </ul>
+      </nav>
+      <div>
+        <img id="company-pic-big" src="https://assets.hearstapps.com/sites/harpersbazaar/assets/images/logos/network-logo-uk.e8afd59.png" alt="Hearst logo">
+        <img id="company-pic-small" src="https://assets.hearstapps.com/sites/harpersbazaar/assets/images/logos/network-logo.cbd683e.png" alt="Hearst logo">
+      </div>
+      <div id="footer-message-box">
+        <p>HARPER'S BAZAAR, PART OF THE HEARST UK FASHION & BEAUTY NETWORK</p>
+        <p>Harper's BAZAAR participates in various affiliate marketing programs, which means we may get paid commissions on editorially chosen products purchased through our links to retailer sites.</p>
+        <p>&copy; 2020 Hearst UK is the trading name of the National Magazine Company Ltd, 30 Panton Street, Leicester Square, London, SW1Y 4AJ. Registered in England. All Rights Reserved.</p>
+      </div>
+      <div>
+        <ul>
+          <li><a href="https://www.hearst.com/-/us-magazines-terms-of-use">Terms of us</a></li>
+          <li><a href="https://www.hearst.com/-/us-magazines-privacy-notice">Privacy Notice</a></li>
+          <li><a href="https://www.harpersbazaar.com/#">Cookies Choice</a></li>
+          <li><a href="https://www.hearst.com/-/us-magazines-privacy-notice#_INTEREST_BASED">Interest-Based ad</a></li>
+          <li><a href="https://www.harpersbazaar.com/about/a175/bazaar-customer-service/">Contact us</a></li>
+          <li><a href="https://www.harpersbazaar.com/about/a9321/advertise-online/">Advertising</a></li>
+        </ul>
+      </div>
+      <div>
+        <img id="ipso-pic" src="https://www.harpersbazaar.com/sites/harpersbazaar/assets/images/logos/ipso_regulated_hires.png" alt="bazaar logo">
+      </div>
+    </div>
+  </footer>
+ 
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+  <!-- Popper.js, then Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <!-- Custom JS -->
+  <scipt src="script.js"></script>
+</body>
+
+</html>
