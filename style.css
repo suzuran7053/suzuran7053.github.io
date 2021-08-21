@@ -110,3 +110,6 @@ hr {
         width: 85vw;
     }
 }
+.nab-codepen, .nav-github{
+    fontsize: 1.5em;
+}
