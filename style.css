@@ -123,6 +123,11 @@ hr {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+#enth {
+    background: linear-gradient(180deg, rgba(245,29,91,1) 0%, rgba(233,176,189,0.6674019949776786) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 .bottom {
     margin-bottom: 100px;
