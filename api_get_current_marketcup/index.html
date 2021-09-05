@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <header class="bg-light pt-5">
+    <header class="pt-5 text-white">
         <div class="p-5">
             <h1>The list of the top 25 cryptocurrencies</h1>
             <hr>
@@ -30,272 +30,283 @@
     <div id="wrapper">
         <button class="btn btn-danger mt-5" type="submit" onClick="window.location.reload()">Update Data</button>
         <!--TOP25 LIST-->
-            <table class="mx-auto my-5 table table-hover table-striped" style="width: 80vw;">
-                <thead>
-                    <tr>
-                        <th>RANK</th>
-                        <th>NAME</th>
-                        <th>PRICE</th>
-                        <th>CHANGE(24h)</th>
-                        <th>MARKET CAP</th>
-                    </tr>
-                </thead>
 
-                <tbody>
-                    <tr>
-                        <!--1-->
-                        <td><span id="rank1"></span></td>
-                        <td><img id="img1" src="" alt="" style="width: 25px; height: auto;">
-                            <a id="a1" href="#">
-                                <span id="name1"></span>
-                            </a>
-                        </td>
-                        <td><span id="price1"></span></td>
-                        <td><span id="change1"></span></td>
-                        <td><span id="marketCap1"></span></td>
-                    </tr>
-                    <tr>
-                        <!--2-->
-                        <td><span id="rank2"></span></td>
-                        <td><img id="img2" src="" alt="" style="width: 25px; height: auto;">
-                            <a id="a2" href="#"><span id="name2"></span></a>
-                        </td>
-                        <td><span id="price2"></span></td>
-                        <td><span id="change2"></span></td>
-                        <td><span id="marketCap2"></span></td>
-                    </tr>
-                    <tr>
-                        <!--3-->
-                        <td><span id="rank3"></span></td>
-                        <td><img id="img3" src="" alt="" style="width: 25px; height: auto;">
-                            <a id="a3" href="#"><span id="name3"></span></a>
-                        </td>
-                        <td><span id="price3"></span></td>
-                        <td><span id="change3"></span></td>
-                        <td><span id="marketCap3"></span></td>
-                    </tr>
-                    <tr>
-                        <!--4-->
-                        <td><span id="rank4"></span></td>
-                        <td><img id="img4" src="" alt="" style="width: 25px; height: auto;">
-                            <a id="a4" href="#"><span id="name4"></span></a>
-                        </td>
-                        <td><span id="price4"></span></td>
-                        <td><span id="change4"></span></td>
-                        <td><span id="marketCap4"></span></td>
-                    </tr>
-                    <tr>
-                        <!--5-->
-                        <td><span id="rank5"></span></td>
-                        <td><img id="img5" src="" alt="" style="width: 25px; height: auto;">
-                            <a id="a5" href="#"><span id="name5"></span></a>
-                        </td>
-                        <td><span id="price5"></span></td>
-                        <td><span id="change5"></span></td>
-                        <td><span id="marketCap5"></span></td>
-                    </tr>
-                    <tr>
-                        <!--6-->
-                        <td><span id="rank6"></span></td>
-                        <td><img id="img6" src="" alt="" style="width: 25px; height: auto;">
-                            <a id="a6" href="#"><span id="name6"></span></a>
-                        </td>
-                        <td><span id="price6"></span></td>
-                        <td><span id="change6"></span></td>
-                        <td><span id="marketCap6"></span></td>
-                    </tr>
-                    <tr>
-                        <!--7-->
-                        <td><span id="rank7"></span></td>
-                        <td><img id="img7" src="" alt="" style="width: 25px; height: auto;">
-                            <a id="a7" href="#"><span id="name7"></span></a>
-                        </td>
-                        <td><span id="price7"></span></td>
-                        <td><span id="change7"></span></td>
-                        <td><span id="marketCap7"></span></td>
-                    </tr>
-                    <tr>
-                        <!--8-->
-                        <td><span id="rank8"></span></td>
-                        <td><img id="img8" src="" alt="" style="width: 25px; height: auto;">
-                            <a id="a8" href="#"><span id="name8"></span></a>
-                        </td>
-                        <td><span id="price8"></span></td>
-                        <td><span id="change8"></span></td>
-                        <td><span id="marketCap8"></span></td>
-                    </tr>
-                    <tr>
-                        <!--9-->
-                        <td><span id="rank9"></span></td>
-                        <td><img id="img9" src="" alt="" style="width: 25px; height: auto;">
-                            <a id="a9" href="#"><span id="name9"></span></a>
-                        </td>
-                        <td><span id="price9"></span></td>
-                        <td><span id="change9"></span></td>
-                        <td><span id="marketCap9"></span></td>
-                    </tr>
-                    <tr>
-                        <!--10-->
-                        <td><span id="rank10"></span></td>
-                        <td><img id="img10" src="" alt="" style="width: 25px; height: auto;">
-                            <a id="a10" href="#"><span id="name10"></span></a>
-                        </td>
-                        <td><span id="price10"></span></td>
-                        <td><span id="change10"></span></td>
-                        <td><span id="marketCap10"></span></td>
-                    </tr>
-                    <tr>
-                        <!--11-->
-                        <td><span id="rank11"></span></td>
-                        <td><img id="img11" src="" alt="" style="width: 25px; height: auto;">
-                            <a id="a11" href="#"><span id="name11"></span></a>
-                        </td>
-                        <td><span id="price11"></span></td>
-                        <td><span id="change11"></span></td>
-                        <td><span id="marketCap11"></span></td>
-                    </tr>
-                    <tr>
-                        <!--12-->
-                        <td><span id="rank12"></span></td>
-                        <td><img id="img12" src="" alt="" style="width: 25px; height: auto;">
-                            <a id="a12" href="#"><span id="name12"></span></a>
-                        </td>
-                        <td><span id="price12"></span></td>
-                        <td><span id="change12"></span></td>
-                        <td><span id="marketCap12"></span></td>
-                    </tr>
-                    <tr>
-                        <!--13-->
-                        <td><span id="rank13"></span></td>
-                        <td><img id="img13" src="" alt="" style="width: 25px; height: auto;">
-                            <a id="a13" href="#"><span id="name13"></span></a>
-                        </td>
-                        <td><span id="price13"></span></td>
-                        <td><span id="change13"></span></td>
-                        <td><span id="marketCap13"></span></td>
-                    </tr>
-                    <tr>
-                        <!--14-->
-                        <td><span id="rank14"></span></td>
-                        <td><img id="img14" src="" alt="" style="width: 25px; height: auto;">
-                            <a id="a14" href="#"><span id="name14"></span></a>
-                        </td>
-                        <td><span id="price14"></span></td>
-                        <td><span id="change14"></span></td>
-                        <td><span id="marketCap14"></span></td>
-                    </tr>
-                    <tr>
-                        <!--15-->
-                        <td><span id="rank15"></span></td>
-                        <td><img id="img15" src="" alt="" style="width: 25px; height: auto;">
-                            <a id="a15" href="#"><span id="name15"></span></a>
-                        </td>
-                        <td><span id="price15"></span></td>
-                        <td><span id="change15"></span></td>
-                        <td><span id="marketCap15"></span></td>
-                    </tr>
-                    <tr>
-                        <!--16-->
-                        <td><span id="rank16"></span></td>
-                        <td><img id="img16" src="" alt="" style="width: 25px; height: auto;">
-                            <a id="a16" href="#"><span id="name16"></span></a>
-                        </td>
-                        <td><span id="price16"></span></td>
-                        <td><span id="change16"></span></td>
-                        <td><span id="marketCap16"></span></td>
-                    </tr>
-                    <tr>
-                        <!--17-->
-                        <td><span id="rank17"></span></td>
-                        <td><img id="img17" src="" alt="" style="width: 25px; height: auto;">
-                            <a id="a17" href="#"><span id="name17"></span></a>
-                        </td>
-                        <td><span id="price17"></span></td>
-                        <td><span id="change17"></span></td>
-                        <td><span id="marketCap17"></span></td>
-                    </tr>
-                    <tr>
-                        <!--18-->
-                        <td><span id="rank18"></span></td>
-                        <td><img id="img18" src="" alt="" style="width: 25px; height: auto;">
-                            <a id="a18" href="#"><span id="name18"></span></a>
-                        </td>
-                        <td><span id="price18"></span></td>
-                        <td><span id="change18"></span></td>
-                        <td><span id="marketCap18"></span></td>
-                    </tr>
-                    <tr>
-                        <!--19-->
-                        <td><span id="rank19"></span></td>
-                        <td><img id="img19" src="" alt="" style="width: 25px; height: auto;">
-                            <a id="a19" href="#"><span id="name19"></span></a>
-                        </td>
-                        <td><span id="price19"></span></td>
-                        <td><span id="change19"></span></td>
-                        <td><span id="marketCap19"></span></td>
-                    </tr>
-                    <tr>
-                        <!--20-->
-                        <td><span id="rank20"></span></td>
-                        <td><img id="img20" src="" alt="" style="width: 25px; height: auto;">
-                            <a id="a20" href="#"><span id="name20"></span></a>
-                        </td>
-                        <td><span id="price20"></span></td>
-                        <td><span id="change20"></span></td>
-                        <td><span id="marketCap20"></span></td>
-                    </tr>
-                    <tr>
-                        <!--21-->
-                        <td><span id="rank21"></span></td>
-                        <td><img id="img21" src="" alt="" style="width: 25px; height: auto;">
-                            <a id="a21" href="#"><span id="name21"></span></a>
-                        </td>
-                        <td><span id="price21"></span></td>
-                        <td><span id="change21"></span></td>
-                        <td><span id="marketCap21"></span></td>
-                    </tr>
-                    <tr>
-                        <!--22-->
-                        <td><span id="rank22"></span></td>
-                        <td><img id="img22" src="" alt="" style="width: 25px; height: auto;">
-                            <a id="a22" href="#"><span id="name22"></span></a>
-                        </td>
-                        <td><span id="price22"></span></td>
-                        <td><span id="change22"></span></td>
-                        <td><span id="marketCap22"></span></td>
-                    </tr>
-                    <tr>
-                        <!--23-->
-                        <td><span id="rank23"></span></td>
-                        <td><img id="img23" src="" alt="" style="width: 25px; height: auto;">
-                            <a id="a23" href="#"><span id="name23"></span></a>
-                        </td>
-                        <td><span id="price23"></span></td>
-                        <td><span id="change23"></span></td>
-                        <td><span id="marketCap23"></span></td>
-                    </tr>
-                    <tr>
-                        <!--24-->
-                        <td><span id="rank24"></span></td>
-                        <td><img id="img24" src="" alt="" style="width: 25px; height: auto;">
-                            <a id="a24" href="#"><span id="name24"></span></a>
-                        </td>
-                        <td><span id="price24"></span></td>
-                        <td><span id="change24"></span></td>
-                        <td><span id="marketCap24"></span></td>
-                    </tr>
-                    <tr>
-                        <!--25-->
-                        <td><span id="rank25"></span></td>
-                        <td><img id="img25" src="" alt="" style="width: 25px; height: auto;">
-                            <a id="a25" href="#"><span id="name25"></span></a>
-                        </td>
-                        <td><span id="price25"></span></td>
-                        <td><span id="change25"></span></td>
-                        <td><span id="marketCap25"></span></td>
-                    </tr>
-                </tbody>
-            </table>
+        <table class="mx-auto my-5 table table-hover table-striped table-dark" style="width: 80vw;">
+            <thead>
+                <tr>
+                    <th>
+                        RANK
+                    </th>
+                    <th>
+                        NAME
+                    </th>
+                    <th>
+                        PRICE
+                    </th>
+                    <th>
+                        CHANGE(24h)
+                    </th>
+                    <th>
+                        MARKET CAP
+                    </th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <!--1-->
+                    <td><span id="rank1"></span></td>
+                    <td><img id="img1" src="" alt="" style="width: 25px; height: auto;">
+                        <a id="a1" href="#">
+                            <span id="name1"></span>
+                        </a>
+                    </td>
+                    <td><span id="price1"></span></td>
+                    <td><span id="change1"></span></td>
+                    <td><span id="marketCap1"></span></td>
+                </tr>
+                <tr>
+                    <!--2-->
+                    <td><span id="rank2"></span></td>
+                    <td><img id="img2" src="" alt="" style="width: 25px; height: auto;">
+                        <a id="a2" href="#"><span id="name2"></span></a>
+                    </td>
+                    <td><span id="price2"></span></td>
+                    <td><span id="change2"></span></td>
+                    <td><span id="marketCap2"></span></td>
+                </tr>
+                <tr>
+                    <!--3-->
+                    <td><span id="rank3"></span></td>
+                    <td><img id="img3" src="" alt="" style="width: 25px; height: auto;">
+                        <a id="a3" href="#"><span id="name3"></span></a>
+                    </td>
+                    <td><span id="price3"></span></td>
+                    <td><span id="change3"></span></td>
+                    <td><span id="marketCap3"></span></td>
+                </tr>
+                <tr>
+                    <!--4-->
+                    <td><span id="rank4"></span></td>
+                    <td><img id="img4" src="" alt="" style="width: 25px; height: auto;">
+                        <a id="a4" href="#"><span id="name4"></span></a>
+                    </td>
+                    <td><span id="price4"></span></td>
+                    <td><span id="change4"></span></td>
+                    <td><span id="marketCap4"></span></td>
+                </tr>
+                <tr>
+                    <!--5-->
+                    <td><span id="rank5"></span></td>
+                    <td><img id="img5" src="" alt="" style="width: 25px; height: auto;">
+                        <a id="a5" href="#"><span id="name5"></span></a>
+                    </td>
+                    <td><span id="price5"></span></td>
+                    <td><span id="change5"></span></td>
+                    <td><span id="marketCap5"></span></td>
+                </tr>
+                <tr>
+                    <!--6-->
+                    <td><span id="rank6"></span></td>
+                    <td><img id="img6" src="" alt="" style="width: 25px; height: auto;">
+                        <a id="a6" href="#"><span id="name6"></span></a>
+                    </td>
+                    <td><span id="price6"></span></td>
+                    <td><span id="change6"></span></td>
+                    <td><span id="marketCap6"></span></td>
+                </tr>
+                <tr>
+                    <!--7-->
+                    <td><span id="rank7"></span></td>
+                    <td><img id="img7" src="" alt="" style="width: 25px; height: auto;">
+                        <a id="a7" href="#"><span id="name7"></span></a>
+                    </td>
+                    <td><span id="price7"></span></td>
+                    <td><span id="change7"></span></td>
+                    <td><span id="marketCap7"></span></td>
+                </tr>
+                <tr>
+                    <!--8-->
+                    <td><span id="rank8"></span></td>
+                    <td><img id="img8" src="" alt="" style="width: 25px; height: auto;">
+                        <a id="a8" href="#"><span id="name8"></span></a>
+                    </td>
+                    <td><span id="price8"></span></td>
+                    <td><span id="change8"></span></td>
+                    <td><span id="marketCap8"></span></td>
+                </tr>
+                <tr>
+                    <!--9-->
+                    <td><span id="rank9"></span></td>
+                    <td><img id="img9" src="" alt="" style="width: 25px; height: auto;">
+                        <a id="a9" href="#"><span id="name9"></span></a>
+                    </td>
+                    <td><span id="price9"></span></td>
+                    <td><span id="change9"></span></td>
+                    <td><span id="marketCap9"></span></td>
+                </tr>
+                <tr>
+                    <!--10-->
+                    <td><span id="rank10"></span></td>
+                    <td><img id="img10" src="" alt="" style="width: 25px; height: auto;">
+                        <a id="a10" href="#"><span id="name10"></span></a>
+                    </td>
+                    <td><span id="price10"></span></td>
+                    <td><span id="change10"></span></td>
+                    <td><span id="marketCap10"></span></td>
+                </tr>
+                <tr>
+                    <!--11-->
+                    <td><span id="rank11"></span></td>
+                    <td><img id="img11" src="" alt="" style="width: 25px; height: auto;">
+                        <a id="a11" href="#"><span id="name11"></span></a>
+                    </td>
+                    <td><span id="price11"></span></td>
+                    <td><span id="change11"></span></td>
+                    <td><span id="marketCap11"></span></td>
+                </tr>
+                <tr>
+                    <!--12-->
+                    <td><span id="rank12"></span></td>
+                    <td><img id="img12" src="" alt="" style="width: 25px; height: auto;">
+                        <a id="a12" href="#"><span id="name12"></span></a>
+                    </td>
+                    <td><span id="price12"></span></td>
+                    <td><span id="change12"></span></td>
+                    <td><span id="marketCap12"></span></td>
+                </tr>
+                <tr>
+                    <!--13-->
+                    <td><span id="rank13"></span></td>
+                    <td><img id="img13" src="" alt="" style="width: 25px; height: auto;">
+                        <a id="a13" href="#"><span id="name13"></span></a>
+                    </td>
+                    <td><span id="price13"></span></td>
+                    <td><span id="change13"></span></td>
+                    <td><span id="marketCap13"></span></td>
+                </tr>
+                <tr>
+                    <!--14-->
+                    <td><span id="rank14"></span></td>
+                    <td><img id="img14" src="" alt="" style="width: 25px; height: auto;">
+                        <a id="a14" href="#"><span id="name14"></span></a>
+                    </td>
+                    <td><span id="price14"></span></td>
+                    <td><span id="change14"></span></td>
+                    <td><span id="marketCap14"></span></td>
+                </tr>
+                <tr>
+                    <!--15-->
+                    <td><span id="rank15"></span></td>
+                    <td><img id="img15" src="" alt="" style="width: 25px; height: auto;">
+                        <a id="a15" href="#"><span id="name15"></span></a>
+                    </td>
+                    <td><span id="price15"></span></td>
+                    <td><span id="change15"></span></td>
+                    <td><span id="marketCap15"></span></td>
+                </tr>
+                <tr>
+                    <!--16-->
+                    <td><span id="rank16"></span></td>
+                    <td><img id="img16" src="" alt="" style="width: 25px; height: auto;">
+                        <a id="a16" href="#"><span id="name16"></span></a>
+                    </td>
+                    <td><span id="price16"></span></td>
+                    <td><span id="change16"></span></td>
+                    <td><span id="marketCap16"></span></td>
+                </tr>
+                <tr>
+                    <!--17-->
+                    <td><span id="rank17"></span></td>
+                    <td><img id="img17" src="" alt="" style="width: 25px; height: auto;">
+                        <a id="a17" href="#"><span id="name17"></span></a>
+                    </td>
+                    <td><span id="price17"></span></td>
+                    <td><span id="change17"></span></td>
+                    <td><span id="marketCap17"></span></td>
+                </tr>
+                <tr>
+                    <!--18-->
+                    <td><span id="rank18"></span></td>
+                    <td><img id="img18" src="" alt="" style="width: 25px; height: auto;">
+                        <a id="a18" href="#"><span id="name18"></span></a>
+                    </td>
+                    <td><span id="price18"></span></td>
+                    <td><span id="change18"></span></td>
+                    <td><span id="marketCap18"></span></td>
+                </tr>
+                <tr>
+                    <!--19-->
+                    <td><span id="rank19"></span></td>
+                    <td><img id="img19" src="" alt="" style="width: 25px; height: auto;">
+                        <a id="a19" href="#"><span id="name19"></span></a>
+                    </td>
+                    <td><span id="price19"></span></td>
+                    <td><span id="change19"></span></td>
+                    <td><span id="marketCap19"></span></td>
+                </tr>
+                <tr>
+                    <!--20-->
+                    <td><span id="rank20"></span></td>
+                    <td><img id="img20" src="" alt="" style="width: 25px; height: auto;">
+                        <a id="a20" href="#"><span id="name20"></span></a>
+                    </td>
+                    <td><span id="price20"></span></td>
+                    <td><span id="change20"></span></td>
+                    <td><span id="marketCap20"></span></td>
+                </tr>
+                <tr>
+                    <!--21-->
+                    <td><span id="rank21"></span></td>
+                    <td><img id="img21" src="" alt="" style="width: 25px; height: auto;">
+                        <a id="a21" href="#"><span id="name21"></span></a>
+                    </td>
+                    <td><span id="price21"></span></td>
+                    <td><span id="change21"></span></td>
+                    <td><span id="marketCap21"></span></td>
+                </tr>
+                <tr>
+                    <!--22-->
+                    <td><span id="rank22"></span></td>
+                    <td><img id="img22" src="" alt="" style="width: 25px; height: auto;">
+                        <a id="a22" href="#"><span id="name22"></span></a>
+                    </td>
+                    <td><span id="price22"></span></td>
+                    <td><span id="change22"></span></td>
+                    <td><span id="marketCap22"></span></td>
+                </tr>
+                <tr>
+                    <!--23-->
+                    <td><span id="rank23"></span></td>
+                    <td><img id="img23" src="" alt="" style="width: 25px; height: auto;">
+                        <a id="a23" href="#"><span id="name23"></span></a>
+                    </td>
+                    <td><span id="price23"></span></td>
+                    <td><span id="change23"></span></td>
+                    <td><span id="marketCap23"></span></td>
+                </tr>
+                <tr>
+                    <!--24-->
+                    <td><span id="rank24"></span></td>
+                    <td><img id="img24" src="" alt="" style="width: 25px; height: auto;">
+                        <a id="a24" href="#"><span id="name24"></span></a>
+                    </td>
+                    <td><span id="price24"></span></td>
+                    <td><span id="change24"></span></td>
+                    <td><span id="marketCap24"></span></td>
+                </tr>
+                <tr>
+                    <!--25-->
+                    <td><span id="rank25"></span></td>
+                    <td><img id="img25" src="" alt="" style="width: 25px; height: auto;">
+                        <a id="a25" href="#"><span id="name25"></span></a>
+                    </td>
+                    <td><span id="price25"></span></td>
+                    <td><span id="change25"></span></td>
+                    <td><span id="marketCap25"></span></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
     <footer>
