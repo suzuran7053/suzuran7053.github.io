@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="jp">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -43,7 +43,7 @@
             <li class="nav-item"><a class="nav-link" href="mailto:naoko.morris1210@gmail.com">問い合わせ</a></li>
         </ul>
         <div id="langs" class="mr-3">
-            <a href="index.php" class="mr-2">English</a>
+            <a href="https://suzuran.me/" class="mr-2">English</a>
             <a href="index-jp.php" class="mr-2">日本語</a>
         </div>
         <div id="sns">
@@ -74,6 +74,10 @@
                 <li class="nav-item mt-3"><a class="nav-link" href="#languages">語学</a></li>
                 <li class="nav-item mt-3"><a class="nav-link" href="mailto:naoko.morris1210@gmail.com">問い合わせ</a></li>
             </ul>
+            <div id="langs" class="mr-3">
+                <a href="https://suzuran.me/" class="mr-2">English</a>
+                <a href="index-jp.php" class="mr-2">日本語</a>
+            </div>
             <div class="text-center mt-5">
                 <a href="https://github.com/suzuran7053" class="mx-2"><i class="fab fa-github"></i></a>
                 <a href="https://codepen.io/suzuran7053/pens/" class="mx-2"><i class="fab fa-codepen"></i></a>
