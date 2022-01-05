@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="This is Naoko Morris's porlfolio website">
+    <title>Portfolio 'IceCream Shop' by Naoko Morris</title>
+
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bevan&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/027c55ebaf.js"></script>
+
+    <!-- BOOTSTRAP 4 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- MY JS -->
+    <script src="script.js"></script>
+
+</head>
+
+
+<!--
+　・日本語Ver
+　・地図
+-->
+
+
+<body>
+    <!-- MODAL -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="close ml-auto mr-3" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title font text-center">Have you tried our new flavour?</h4>
+                <img src="images/modal.jpg" class="image-fluid" style="width:100%;" alt="matcha flavour ice cream">
+                <p class="font m-3 text-center">Green Tea with Matcha jelly<span class="ml-3">£5.6</span></p>
+            </div>
+        </div>
+    </div>
+
+    <section class="sticky-top bg-white" id="navigation">
+        <!-- NAV FOR LARGER BROWSER -->
+        <nav class="navbar navbar-expand-sm" id="nav-big">
+            <div>
+                <a href="#" class="mx-3"><img class="image-fluid" style="width:80px;" alt="shoplogo" src="images/pop2.png"></a>
+            </div>
+            <ul class="navbar-nav font mr-auto" id="nav">
+                <li class="nav-item"><a class="nav-link mx-3 pb-0" href="">HOME</a></li>
+                <li class="nav-item"><a class="nav-link mx-3 pb-0" href="#story">STORY</a></li>
+
+                <li class="nav-item"><a class="nav-link mx-3 pb-0" href="#flavours">FLAVOURS</a></li>
+                <li class="nav-item"><a class="nav-link mx-3 pb-0" href="#shops">SHOPS</a></li>
+            </ul>
+            <ul class="sns_box">
+                <li class="nav-item sns"><a class="nav-link" href="#"><i class="fab fa-facebook"></i></a></li>
+                <li class="nav-item sns"><a class="nav-link" href="#"><i class="fab fa-instagram"></i></a></li>
+                <li class="nav-item sns"><a class="nav-link" href="#"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <!-- NAV FOR SMALLER BROWSER -->
+    <nav class="navbar navbar-expand-md sticky-top bg-white" id="nav-small">
+        <ul class="navbar-nav">
+            <li class="nav-item text-center">
+                <a class="nav-link" href=""><img class="image-fluid" style="width:80px;" alt="shoplogo" src="images/pop2.png"></a>
+            </li>
+            <li class="nav-item" style="font-size: 2.0em;">
+                <div onclick="openNav()"><i class="fas fa-bars float-right text-danger"></i></div>
+            </li>
+        </ul>
+    </nav>
+    <div id="mySidenav">
+        <div class="text-right">
+            <a class="closebtn" style="font-size: 1.5em;" onclick="closeNav()"><i class="fas fa-times mr-3"></i></a>
+        </div>
+        <ul class="navbar-nav font text-center">
+            <li><a href="">HOME</a></li>
+            <li><a href="#story">STORY</a></li>
+            <li><a href="#flavours">FLAVOURS</a></li>
+            <li><a href="#shops">SHOPS</a></li>
+            <li class="nav-item mt-3">
+                <i class="fas fa-ice-cream" style="font-size: 2.5em; color:#F3BDF4;"></i>
+            </li>
+            <li>
+                <ul class="d-flex justify-content-center">
+                    <li class="m-3"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li class="m-3"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li class="m-3"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+
+
+
+
+
+
+    <section class="container-fluid align-content-center page-section">
+        <div class="home row">
+            <div class="col-6-sm d-flex align-items-center">
+                <div class="p-2 home-box">
+                    <h1 class="font">La Caleta</h1>
+                    <h3 class="font">with Organic Ice Cream</h3>
+                    <p class="m-0 p-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="container-fluid page-section" id="story">
+        <div class="row story justify-content-center">
+            <div class="col-md-8 text-white">
+                <h2 class="font">
+                    Smooth & Creamy Our Own Organic Milk
+                </h2>
+                <p class="px-3 pt-3">Pellentesque mattis ipsum eget dui fermentum sollicitudin. <br>
+                    In pretium nibh velit, et efficitur sapien malesuada in!
+                    In a dui non erat tincidunt malesuada. Nam iaculis ipsum sit amet dignissim malesuada. Nulla cursus risus quis faucibus aliquam.
+                    Pellentesque habitant morbi tristique senectus et netus et malesuada.</p><p class="mini"> Duis accumsan, libero tincidunt hendrerit posuere,
+                    turpis quam rutrum dolor, sit amet eleifend neque lorem vel sem. Vivamus blandit congue ipsum.
+                    Vivamus imperdiet mauris lorem, vel auctor felis mattis sit amet. </p>
+                <a class="btn float-right mt-3" href="">Read more about our milk..</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FLAVOURS -->
+    <section class="container page-section my-2" id="flavours">
+        <h2 class="font mt-5">
+            Flavours
+        </h2>
+        <div class="my-5">
+            <div class="row">
+                <div class="p-2 col-3 col-md-4 image-box">
+                    <img src="images/milk.jpg" alt="" class="image-fluid flav">
+                    <div class="middle">
+                        <div class="text">Milk</div>
+                    </div>
+                </div>
+                <div class="p-2 col-3 col-md-4 image-box">
+                    <img src="images/coconuts.jpg" alt="" class="image-fluid flav">
+                    <div class="middle">
+                        <div class="text">Coconuts</div>
+                    </div>
+                </div>                
+                <div class="p-2 col-3 col-md-4 image-box">
+                    <img src="images/fizzy.jpg" alt="" class="image-fluid flav">
+                    <div class="middle">
+                        <div class="text">Fizzy Cider</div>
+                    </div>
+                </div>
+                <div class="p-2 col-3 col-md-4 image-box">
+                    <img src="images/mango.jpg" alt="" class="image-fluid flav">
+                    <div class="middle">
+                        <div class="text">Mango</div>
+                    </div>
+                </div>                
+                <div class="p-2 col-3 col-md-4 image-box">
+                    <img src="images/berry.jpg" alt="" class="image-fluid flav">
+                    <div class="middle">
+                        <div class="text">Berry</div>
+                    </div>
+                </div>
+                <div class="p-2 col-3 col-md-4 image-box">
+                    <img src="images/matcha.jpg" alt="" class="image-fluid flav">
+                    <div class="middle">
+                        <div class="text">Matcha</div>
+                    </div>
+                </div>  
+                <div class="p-2 col-3 col-md-4 image-box mini">
+                    <img src="images/choco.jpg" alt="" class="image-fluid flav">
+                    <div class="middle">
+                        <div class="text">Chocolate</div>
+                    </div>
+                </div>
+                <div class="p-2 col-3 col-md-4 image-box mini">
+                    <img src="images/persimmon.jpg" alt="" class="image-fluid flav">
+                    <div class="middle">
+                        <div class="text">Persimmon</div>
+                    </div>
+                </div>          
+            </div>
+        </div>
+        <div class="row justify-content-center flavours text-white">
+            <h2 class="font mt-5 px-3">
+                New Flavour  <em>'Green Tea'</em>  Joined
+            </h2>
+            <div class="col-md-9">                
+                <p class="px-2 pt-2">Pellentesque mattis ipsum eget dui fermentum sollicitudin. <br>
+                    In pretium nibh velit, et efficitur sapien malesuada in!
+                    In a dui non erat tincidunt malesuada. Nam iaculis ipsum sit amet dignissim malesuada. Nulla cursus risus quis faucibus aliquam.
+                    Pellentesque habitant morbi tristique senectus et netus et malesuada. Duis accumsan, libero tincidunt hendrerit posuere,
+                    turpis quam rutrum dolor, sit amet eleifend neque lorem vel sem.  </p>
+            </div>
+        </div>
+        
+    </section>
+
+
+
+    <!-- SHOPS -->
+    <section class="container darkpage-section pt-5" id="shops">
+        <h2 class="font mt-5">
+            Shops Guide
+        </h2>
+        <div class="row shops">
+            <div class="col-sm-6">
+                <h4 class="font">La Caleta</h4>
+                <p>Suspendisse ultricies odio et mauris consequat, nec commodo lectus dictum. Nunc imperdiet urna in massa ultrices, at facilisis sapien egestas.</p>
+            </div>
+            <div class="col-sm-6">
+                <div>
+                    <h5 class="font">Opening Times</h5>
+                    <span>20th July - 10 September</span>
+                    <span><time>10am to 8pm</time></span>
+                    <span>Wednesday Closed</span>
+                </div>
+                <div class="mt-4">
+                    <h5 class="font">Location</h5>
+                    <span>390, Santa, Cruz de Tenerife, Spain</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="row shops">
+            <div class="col-sm-6">
+                <h4 class="font">Santander</h4>
+                <p>Donec vel turpis sed sapien tincidunt lobortis. Cras lobortis fermentum consectetur. Duis hendrerit maximus nulla eget tempus.</p>
+            </div>
+            <div class="col-sm-6">
+                <div>
+                    <h5 class="font">Opening Times</h5>
+                    <span>20th July - 31 August</span>
+                    <span><time>9am to 22pm</time></span>
+                    <span>Tuesday Closed</span>
+                </div>
+                <div class="mt-4">
+                    <h5 class="font">Location</h5>
+                    <span>Paseo de Pereda, 97, 3104 Santander, Cantabria, Spain</span>
+                </div>
+            </div>
+        </div>
+        <div class="row shops">
+            <div class="col-sm-6">
+                <h4 class="font">Saint-Nazaire</h4>
+                <p>In pretium nibh velit, et efficitur sapien malesuada in. Pellentesque in tempor augue. Aliquam porta aliquam eros, vel tincidunt purus dignissim quis. </p>
+            </div>
+            <div class="col-sm-6">
+                <div>
+                    <h5 class="font">Opening Times</h5>
+                    <span>23 June - 15 August</span>
+                    <span><time>12am to 6pm</time></span>
+                    <span>Monday Closed</span>
+                </div>
+                <div class="mt-4">
+                    <h5 class="font">Location</h5>
+                    <span>5 Chemin de la Plage, 235 Saint-Nazaire, France</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="container-fluid">
+        <div class="mailing text-center py-5">
+            <div class="row justify-content-center text-dark mx-0">
+                <div class="col-md-6">
+                    <h3 class="font">
+                        JOIN OUR MAILING LIST</h3>
+                    <p>Sign up for new flavours, latest news and recipes</p>
+                </div>
+            </div>
+            <div class="row justify-content-center mx-0">
+                <div class="col-md-6">
+                    <form action="" method="">
+                        <div class="form-group d-inline-block">
+                            <input class="form-control" name="email" type="email" placeholder="Type your email address">
+                        </div>
+                        <div class="form-group d-inline-block">
+                            <input class="btn btn-dark" type="submit" name="submit" value="Subscribe">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row justify-content-center text-white mx-0">
+                <p class="col-md-6 px-0">Pellentesque mattis ipsum eget dui fermentum sollicitudin.<br>
+                    Nulla rutrum mollis ligula ut rhoncus. Vestibulum quis suscipit justo, nec malesuada metus!</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="py-4">
+        <ul class="text-center">
+            <li><i class="fas fa-ice-cream" style="font-size: 2em; color:#F3BDF4;"></i></li>
+        </ul>
+        <nav class="navbar navbar-expand-sm font text-center">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item mx-4"><a class="mt-auto" href="">HOME</a></li>
+                <li class="nav-item mx-4"><a href="#story">STORY</a></li>
+                <li class="nav-item mx-4"><a href="#flavours">FLAVOURS</a></li>
+                <li class="nav-item mx-4"><a href="#shops">SHOPS</a></li>
+            </ul>
+        </nav>
+        <div class="p-2 text-right">
+            <small>&copy; Harvour with Organic Ice Cream</small>
+        </div>
+    </footer>
+
+</body>
+
+</html>
