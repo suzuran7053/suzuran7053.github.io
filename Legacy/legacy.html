@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+https://www.warnerbros.co.uk/movies/space-jam-new-legacy
+file:///C:/Users/USER/pg/practice/css/grid_legacy/legacy.html
+-->
+
+<head>
+    <title>CSS Grid Practice "Legacy"</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="author" content=""> -->
+
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- FONTAWESOME -->
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap" rel="stylesheet">
+
+    <link href="legacy.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav id="defaultMenu">
+            <div class="menuItem">
+                <a href="#">
+                    <img src="./images/logo.png" alt="WB logo">
+                </a>
+            </div>
+            <div class="menuItem">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="menuItem">
+                <i class="fas fa-search"></i>
+            </div>
+        </nav>
+
+        <nav id="hiddenMenu">
+            <ul>
+                <li><a href="">Movies</a></li>
+                <li><a href="">TX Shows</a></li>
+                <li><a href="">Games & Apps</a></li>
+                <li><a href="">Brands</a></li>
+                <li><a href="">Collections</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Experiences</a></li>
+                <li><a href="">WB Shop</a></li>
+            </ul>
+        </nav>
+
+        <nav id="hiddenSearchBar">
+            <div id="searchForm">
+                <form action="get">
+                    <label for="search"></label>
+                    <input type="text" name="search" id="search" placeholder="Search by title">
+                </form>
+            </div>
+            <div class="menuItem">
+                <i class="fas fa-times"></i>
+            </div>
+        </nav>
+
+        <div id="mainImage">
+            <div id="hiddenHeaderText">
+                <div class="leftLine">
+                    <h1>SPACE JAM: A NEW LEGACY</h1>
+                    <p>Available On 4k, Blu-ray™, DVD & Digital Download now</p>
+                </div>
+            </div>
+        </div>
+        <div class="textBox" id="headerText">
+            <div class="leftLine">
+                <h1>SPACE JAM: A NEW LEGACY</h1>
+                <p>Available On 4k, Blu-ray™, DVD & Digital Download now</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="section_watchIt" class="textBox">
+            <div class="leftLine">
+                <h2>WATCH IT</h2>
+            </div>
+            <div>
+                <p>For more information on how to digitally watch your favourite films and shows, see our FAQs here.</p>
+            </div>
+
+            <div>
+                <h3>Buy – Digital</h3>
+                <div class="flex-box channels">
+                    <div>
+                        <a href=""><img src="images/buy-on-prime-video.jpg" alt=""></a>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/apple-tv-v3.jpg" alt=""></a>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/bt.jpg" alt=""></a>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/chili.jpg" alt=""></a>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/google-play-v2.jpg" alt=""></a>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/microsoft.jpg" alt=""></a>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/rankutentv.jpg" alt=""></a>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/wb_sky_store_logo_100x40.png" alt=""></a>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/virgin_movies_stacked_red.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3>Buy – On Disc</h3>
+                <div class="flex-box channels">
+                    <div>
+                        <a href=""><img src="images/amazon.co_.uk_new.jpg" alt=""></a>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/wb-shop.jpg" alt=""></a>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/zavvi.jpg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pickMeUp" class="textBox">
+            <div class="leftLine">
+                <h2>PICK ME UP</h2>
+            </div>
+
+            <div>
+                <div class="flex-box films">
+                    <div>
+                        <a href=""><img src="images/annette.jfif" alt=""></a>
+                        <span>Movies</span>
+                        <h3>ANNETTE</h3>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/assassin.jfif" alt=""></a>
+                        <span>Movies</span>
+                        <h3>ASSASSIN</h3>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/butterflymon.jfif" alt=""></a>
+                        <span>Movies</span>
+                        <h3>Cutterfly Mon</h3>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/akira.jfif" alt=""></a>
+                        <span>Movies</span>
+                        <h3>AKIRA</h3>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/hamilton.jfif" alt=""></a>
+                        <span>Movies</span>
+                        <h3>HAMILTON</h3>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/sjanl_key_art.jfif" alt=""></a>
+                        <span>Movies</span>
+                        <h3>SPACE JAM</h3>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/us.jpg" alt=""></a>
+                        <span>Movies</span>
+                        <h3>Us</h3>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/encounter.jpg" alt=""></a>
+                        <span>Movies</span>
+                        <h3>ENCOUNTER</h3>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/jaws.jpeg" alt=""></a>
+                        <span>Movies</span>
+                        <h3>JAWS</h3>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/operationFortune.jpg" alt=""></a>
+                        <span>Movies</span>
+                        <h3>Operation Fortune</h3>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/dragon3D.jpg" alt=""></a>
+                        <span>Movies</span>
+                        <h3>Dragon 3D</h3>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/joker.jpg" alt=""></a>
+                        <span>Movies</span>
+                        <h3>JOKER</h3>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/queen.jfif" alt=""></a>
+                        <span>Movies</span>
+                        <h3>Bohemian Rhapsody</h3>
+                    </div>
+                    <div>
+                        <a href=""><img src="images/ava.png" alt=""></a>
+                        <span>Movies</span>
+                        <h3>AVA</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--    <section id="newsArticles" class="textBox">
+            <div class="leftLine">
+                <h2>NEWS ARTICLES</h2>
+            </div>
+            <div id="gridBox">
+                <div id="warnerBros">
+                    <div class="gridText leftLine">
+                        <span>17 December, 2021</span>
+                        <h3>THE WARNER BROS. UK 2022 MOVIE PROVIEW</h3>
+                        <h4>In truw traditioin, it's time to look forward to what 2022 is going to bering to the big screen.
+                        </h4>
+                    </div>
+                </div>
+
+                <div id="Tips">
+                    <div class="gridText leftLine">
+                        <span>3 November, 2021</span>
+                        <h3>5 Tips for Hosting the Ultimate Harry Potter and the Philosopher’s Stone Watch Party </h3>
+                    </div>
+                </div>
+
+                <div id="Batman">
+                    <div class="gridText leftLine">
+                        <span>3 September, 2021</span>
+                        <h3>Why Batman deserves a holiday</h3>
+                        <h4>Life can get gruelling as Gotham's defender, so let's give Bats the break he deserves! We're looking back at the Batman: Arkham series to celebrate all the times Batman put duty first.</h4>
+                    </div>
+                </div>
+                <div id="Rebecca">
+                    <div class="gridText leftLine">
+                        <span>23 September, 2021</span>
+                        <h3>Actor Profile: Rebecca Ferguson</h3>
+                        <h4>Since Rebecca’s early acting roots, she’s dabbled in some of the finest, and the widest variety of productions to hit the big screen - but where did it all begin? </h4>
+                    </div>
+                </div>
+                <div id="Harley">
+                    <div class="gridText leftLine">
+                        <span>25 August, 2021</span>
+                        <h3>Everything we know about Harley Quinn</h3>
+                        <h4>Think you know Harley? Here's her weird and wild history, as seen in the Batman: Arkham and Injustice games.</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+ -->
+        <section id="jam">
+            <div>
+                <div id="jamImageBox" class="jamBoxes">
+                    <img src="images/sjanl_key_art.jfif" alt="">
+                </div>
+                <div id="jamMiddleBox" class="jamBoxes">
+                    <h2>ABOUT</h2>
+                    <h4>"An absolutely brilliant film. We all loved it 😍👌🏻" - @TheWingroves</h4>
+                    <p>Welcome to the Jam! NBA champion and global icon LeBron James goes on an epic adventure alongside timeless Tune Bugs Bunny with the animated/live-action event “Space Jam: A New Legacy,” from director Malcolm D. Lee and an innovative
+                        filmmaking team including Ryan Coogler and Maverick Carter. This transformational journey is a manic mashup of two worlds that reveals just how far some parents will go to connect with their kids. When LeBron and his young son
+                        Dom are trapped in a digital space by a rogue A.I., LeBron must get them home safe by leading Bugs, Lola Bunny and the whole gang of notoriously undisciplined Looney Tunes to victory over the A.I.'s digitized champions on the court:
+                        a powered-up roster of professional basketball stars as you've never seen them before. It's Tunes versus Goons in the highest-stakes challenge of his life, that will redefine LeBron's bond with his son and shine a light on the
+                        power of being yourself. The ready-for-action Tunes destroy convention, supercharge their unique talents and surprise even “King” James by playing the game their own way.</p>
+                </div>
+                <div id="jamRightBox" class="jamBoxes">
+                    <h3>ORIGINAL THEATRICAL RELEASE</h3>
+                    <p>16 July, 2021</p>
+                    <h3>GENRES</h3>
+                    <p>Action Adventure, Animation, Comedy, Family</p>
+                    <h3>FOLLOW</h3>
+                    <div>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <img src="./images/logo.png" alt="WB logo">
+        <small>TM &copy; 2022 Warner Bros. Entertainment Inc. All rights reserved.</small>
+        <nav>
+            <ul>
+                <li>Terms of Use</li>
+                <li>Privacy Policy</li>
+                <li>Modern Slavery Act</li>
+                <li>Notice on Cookies</li>
+                <li>Manage Preferences</li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
