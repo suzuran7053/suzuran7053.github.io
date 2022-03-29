@@ -1,0 +1,14 @@
+{
+    "name": "lodash",
+    "version": "1.0.0",
+    "description": "",
+    "main": "lodash.js",
+    "scripts": {
+        "test": "mocha"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "mocha": "^9.1.4"
+    }
+}
