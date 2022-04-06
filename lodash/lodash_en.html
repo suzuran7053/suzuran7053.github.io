@@ -23,8 +23,7 @@
     </header>
 
     <main>
-        <div id="bigContainer">
-
+        <div class="bigContainer">
             <!-- clamp(num, low, up) -->
             <div class="lodashes">
                 <h3>.clamp(num, low, up)</h3>
@@ -85,7 +84,44 @@
                     <p id="wordsAnswer" class="answer"></p>
                 </div>
             </div>
+        </div>
 
+        <div class="bigContainer">
+            <!-- pad() -->
+            <div class="lodashes">
+                <h3>.pad(str, num)</h3>
+                <p>Enter a word you like and any number larger than the length of the word. It will be filled by * to meet the length.</p>
+                <div>
+                    <div>
+                        <input id="padText" type="text" placeholder="word">
+                    </div>
+                    <div>
+                        <input id="padNum" type="number" placeholder="num">
+                    </div>
+                    <button id="padSubmit" class="submit">Try</button>
+                </div>
+                <div>
+                    <p id="padAnswer" class="answer"></p>
+                </div>
+            </div>
+
+            <!-- drop() -->
+            <div class="lodashes">
+                <h3>.drop(arr, num)</h3>
+                <p>aaaaaa</p>
+                <div>
+                    <div>
+                        <input id="dropText" type="text" placeholder="word">
+                    </div>
+                    <div>
+                        <input id="dropNum" type="number" placeholder="num">
+                    </div>
+                    <button id="dropSubmit" class="submit">Try</button>
+                </div>
+                <div>
+                    <p id="dropAnswer" class="answer"></p>
+                </div>
+            </div>
         </div>
     </main>
 

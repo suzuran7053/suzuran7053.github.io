@@ -19,17 +19,19 @@ header {
 
 /* MAIN */
 
-#bigContainer {
+.bigContainer {
     width: 70vw;
-    margin: 0 auto;
+    margin: 1em auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .lodashes {
     background: white;
+    margin: 1em auto;
     padding: 1em;
-    width: 20vw;
+    width: 330px;
     border-radius: 20px;
     border: 1px solid grey;
 }

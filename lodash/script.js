@@ -33,7 +33,27 @@ const lodash = {
     words(str) {
         if (typeof str == "string") {
             let arr = str.split(" ");
-            return arr.join("★");
+            return arr.join("*");
+        }
+    },
+
+    pad(str, num) {
+        let length = str.length;
+        let spaces = num - length;
+        if (spaces <= 0) {
+            return str;
+        } else {
+            if (spaces % 2 != 0) {
+                var endSpace = Math.floor(spaces / 2) + 1;
+                var frontSpace = Math.floor(spaces / 2);
+            } else {
+                // NOTE HOW TO DECLARE MULTIPLE CARIABLES TO THE SAME VALUE
+                var frontSpace = endSpace = Math.floor(spaces / 2);
+            }
+            let space = "*";
+            let front = space.repeat(frontSpace);
+            let end = space.repeat(endSpace);
+            return front.concat(str, end);
         }
     }
 
@@ -72,11 +92,19 @@ $(document).ready(function() {
         var wordsAnswer = $("#wordsAnswer");
 
         let result = lodash.words(wordsText);
-        console.log(result);
         wordsAnswer.html(result);
     }
     $("#wordsSubmit").on("click", words);
 
+    function pad() {
+        var padText = $("#padText").val();
+        var padNum = $("#padNum").val();
+        var padAnswer = $("#padAnswer");
+        padNum
+        let result = lodash.pad(padText, padNum);
+        padAnswer.html(result);
+    }
+    $("#padSubmit").on("click", pad);
 
 
 });
