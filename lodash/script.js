@@ -27,49 +27,56 @@ const lodash = {
             start = end;
             end = temp;
         }
-        return num > start && num < end;
+        return num > start && num < end ? "true" : "false";
     },
 
     words(str) {
-        return str.split(" ");
+        if (typeof str == "string") {
+            let arr = str.split(" ");
+            return arr.join("★");
+        }
     }
 
 }
 
 
 $(document).ready(function() {
-    // .clamp()
+
     function clamp() {
         var clampNum = +$("#clampNum").val();
         var clampLow = +$("#clampLow").val();
         var clampUp = +$("#clampUp").val();
         var clampAnswer = $("#clampAnswer");
 
-        if (typeof clampNum === "number" && typeof clampLow === "number" && typeof clampUp === "number") {
-            let result = lodash.clamp(clampNum, clampLow, clampUp);
-            clampAnswer.html(result);
-            // alert(result);
-        } else {
-            clampAnswer.html("You can only enter number");
-        }
+        let result = lodash.clamp(clampNum, clampLow, clampUp);
+        clampAnswer.html(result);
     }
     $("#clampSubmit").on("click", clamp);
 
-    // .inRange()
-    function inRange() {
-        var inRangenum = +$("#inRangenum").val();
-        var inRangestart = +$("#inRangestart").val();
-        var inRangeend = +$("#inRangeend").val();
-        var inRangeAnswer = $("#imRangeAnswer");
 
-        if (typeof inRangenum === "number" && typeof inRangestart === "number" && typeof inRangeend === "number") {
-            let result = lodash.inRange(inRangenum, inRangestart, inRangeend);
-            console.log(result);
-            inRangeAnswer.html(result);
-            // alert(result);
-        } else {
-            inRangeAnswer.html("You can only enter number");
-        }
+    function inRange() {
+        var inRangeNum = +$("#inRangeNum").val();
+        var inRangeStart = +$("#inRangeStart").val();
+        var inRangeEnd = +$("#inRangeEnd").val();
+        var inRangeAnswer = $("#inRangeAnswer");
+
+        let result = lodash.inRange(inRangeNum, inRangeStart, inRangeEnd);
+        console.log(result);
+        inRangeAnswer.html(result);
     }
     $("#inRangeSubmit").on("click", inRange);
+
+
+    function words() {
+        var wordsText = $("#wordsText").val();
+        var wordsAnswer = $("#wordsAnswer");
+
+        let result = lodash.words(wordsText);
+        console.log(result);
+        wordsAnswer.html(result);
+    }
+    $("#wordsSubmit").on("click", words);
+
+
+
 });

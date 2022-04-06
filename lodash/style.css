@@ -11,7 +11,7 @@ body {
     font-family: Ubuntu;
 }
 
-h1 {
+header {
     padding: 2em 0em;
     font-weight: bold;
 }
@@ -39,6 +39,10 @@ input,
 p {
     padding: 0.3em;
     margin-bottom: 1em;
+}
+
+p {
+    overflow-wrap: break-word;
 }
 
 .submit {

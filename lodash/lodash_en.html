@@ -17,8 +17,8 @@
 <body>
     <header>
         <div>
-            <h1>Lodashの遊び場</h1>
-            <h5><a href="lodash_en.html">Switch to English</a></h5>
+            <h1>Lodash Reproduction Playaround!</h1>
+            <h5><a href="lodash.html">Switch to Japanese</a></h5>
         </div>
     </header>
 
@@ -29,7 +29,7 @@
             <div class="lodashes">
                 <h3>.clamp(num, low, up)</h3>
                 <p>
-                    真ん中の数を返します。<i>bottom</i>に<i>top</i>より大きい数は指定できません。
+                    It returns the number in the middle of the other two numbers. Note that <i>bottom</i> should always be lower than <i>top</i>.
                 </p>
                 <div>
                     <div>
@@ -51,7 +51,8 @@
             <!-- inRange(num, start, end) -->
             <div class="lodashes">
                 <h3>.inRange(num, start, end)</h3>
-                <p><i>num</i>が<i>start</i>と<i>end</i>の間にあるかどうかを調べます。もし<i>start</i>に<i>end</i>よりも大きい数字をセットした場合2つの値は入れ替えて計算されます。
+                <p>
+                    It returns if <i>num</i> is in the middle of <i>start</i> and <i>end</i>. If you set a number into <i>end</i> which is lower than <i>start</i>, they will be exchanged.
                 </p>
                 <div>
                     <div>
@@ -73,7 +74,7 @@
             <!-- words(str) -->
             <div class="lodashes">
                 <h3>.words(str)</h3>
-                <p>お好きな文章を入力してください。半角スペースが星に変わります</p>
+                <p>Type any sentense. Spaces will be changed to stars.</p>
                 <div>
                     <div>
                         <input id="wordsText" type="text" placeholder="sentense">
