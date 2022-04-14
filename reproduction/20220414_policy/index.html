@@ -1,1 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>POLICY化粧品</title>
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/027c55ebaf.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+
+<body>
+    <header>
+        <!-- HEADER FOR MOBILES -->
+        <div id="header_sm">
+            <div id="div_sm">
+                <div class="div_logo">
+                    <a href="#"><img class="img-logo" src="./resources/logo.png" alt=""></a>
+                </div>
+                <small>Your skin can be more beautiful</small>
+                <div id="div_bars">
+                    <img id="img_bars" src="./resources/bars.jpg" alt="">
+                </div>
+            </div>
+            <nav id="nav_sm">
+                <ul>
+                    <li><a href="#">ホーム<br><span class="eng">HOME</span><span class="allows">&gt;</span></a></li>
+                    <li><a href="#concept">コンセプト<br><span class="eng">CONCEPT</span><span class="allows">&gt;</span></a></li>
+                    <li><a href="#lineup">ラインナップ<br><span class="eng">LINE UP</span><span class="allows">&gt;</span></a></li>
+                    <li><a href="#skin">肌診断<br><span class="eng">SKIN DIAGNOSIS</span><span class="allows">&gt;</span></a></li>
+                    <li><a href="#press">ポリシープレス<br><span class="eng">POLICY PRESS</span><span class="allows">&gt;</span></a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- IMAGE SEACTION FOR ALL -->
+        <div id="div_header_img">
+            <div id="div_headlines">
+                <!-- HEADER FOR DESKTOPS -->
+                <div id="div_lg">
+                    <div class="div_logo">
+                        <a href="#"><img class="img-logo" src="./resources/logo.png" alt=""></a>
+                    </div>
+                    <small>Your skin can be more beautiful</small>
+                </div>
+                <!-- HEADLINES FOR ALL-->
+                <h1>それは、エステティシャンが頼る化粧品。</h1>
+                <h2>美肌づくりの専門家から選ばれる、<br>プロクオリティのスキンケア。</h2>
+                <h3>POLICY BEAUTY</h3>
+            </div>
+            <div id="news_lg">
+                <div class="container">
+                    <div class="bg_brown">NEWS</div>
+                    <div id="div_news">
+                        <ul>
+                            <li>
+                                <date>2022/01/05</date><span>類似品注意について</span>
+                            </li>
+                            <!--  <li>
+                            <date>2022/04/06</date><span>2022年4月7日(木) 臨時休業致します</span>
+                        </li>
+                        <li>
+                            <date>2022/02/08</date><span>アピールローション欠品のお知らせ</span>
+                        </li> -->
+                        </ul>
+                    </div>
+                    <div class="bg_brown">&gt;ニュース一覧を見る</div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <nav id="nav_lg" class="container">
+                <ul>
+                    <li><a href="# ">ホーム<br><span class="eng ">HOME</span></a></li>
+                    <li><a href="#concept ">コンセプト<br><span class="eng ">CONCEPT</span></a></li>
+                    <li><a href="#lineup ">ラインナップ<br><span class="eng ">LINE UP</span></a></li>
+                    <li><a href="#skin ">肌診断<br><span class="eng ">SKIN DIAGNOSIS</span></a></li>
+                    <li><a href="#press ">ポリシープレス<br><span class="eng ">POLICY PRESS</span></a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main class="container">
+        <section>
+            <video autoplay muted>
+                <source src="http://www.policy.co.jp/dcms_media/other/policy_brand.mp4" type="video/mp4">
+            </video>
+        </section>
+    </main>
+
+    <footer>
+    </footer>
+
+    <script>
+        $(document).ready(function() {
+            $("#img_bars ").click(function() {
+                $("#nav_sm ").slideToggle("fast ");
+            })
+        })
+    </script>
+</body>
+
+</html>
