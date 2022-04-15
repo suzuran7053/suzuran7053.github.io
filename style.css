@@ -123,8 +123,9 @@ hr {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 #enth {
-    background: linear-gradient(180deg, rgba(245,29,91,1) 0%, rgba(233,176,189,0.6674019949776786) 100%);
+    background: linear-gradient(180deg, rgba(245, 29, 91, 1) 0%, rgba(233, 176, 189, 0.6674019949776786) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -136,10 +137,11 @@ hr {
 
 /* TIMELINE */
 
+
 /* The actual timeline (the vertical ruler) */
 
 #section_timeline {
-    margin: 0;
+    /*  margin: 0; */
     padding: 20px;
 }
 
@@ -268,10 +270,16 @@ hr {
     /* Make sure all circles are at the same spot */
     .left::after,
     .right::after {
-        left: 15px;
+        left: 21px;
     }
     /* Make all right containers behave like the left ones */
     .right {
         left: 0%;
+    }
+    #section_timeline .content {
+        padding: 0;
+    }
+    #section_timeline p {
+        font-size: .8em;
     }
 }
