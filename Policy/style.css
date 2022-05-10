@@ -323,6 +323,7 @@ FOR SMALLER DEVICE
     .flex {
         display: block;
     }
+    /* HEADER */
     #nav_sm {
         background-color: #fff;
     }
@@ -331,6 +332,9 @@ FOR SMALLER DEVICE
     }
     h1 {
         font-size: 10vw;
+    }
+    header small {
+        margin-left: 1em;
     }
     .video_container {
         margin: 0;
@@ -350,11 +354,18 @@ FOR SMALLER DEVICE
         margin: 1em 0 0;
     }
     #concept_div,
-    #concept_div#concept_div p {
+    #concept_div p {
         background: #F7F6F2;
+    }
+    #concept_div p {
+        margin: .5em 1em;
     }
     #concept .lg_drop {
         margin: auto;
+    }
+    #concept .lg_drop img {
+        width: 100%;
+        height: auto;
     }
     #concept_div .ml_auto {
         margin: auto;
